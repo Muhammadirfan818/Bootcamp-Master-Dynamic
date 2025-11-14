@@ -85,7 +85,7 @@ export default function Navbar2() {
             <Link
               key={`headphone-${i}`}
               href={normalizeUrl(item.headphonelink?.url) || "#"}
-              className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition flex items-center gap-1"
+              className="text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition flex items-center gap-1"
             >
               <PrismicRichText field={item.text} />
               <span className="opacity-70 inline-flex">
@@ -99,7 +99,7 @@ export default function Navbar2() {
             <Link
               key={`earphones-${i}`}
               href={normalizeUrl(item.earphonelink?.url) || "#"}
-              className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition flex items-center gap-1"
+              className="text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition flex items-center gap-1"
             >
               <PrismicRichText field={item.text} />
               <span className="opacity-70 inline-flex">
@@ -113,7 +113,7 @@ export default function Navbar2() {
             <Link
               key={`accessories-${i}`}
               href={normalizeUrl(item.accessorieslink?.url) || "#"}
-              className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition flex items-center gap-1"
+              className="text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition flex items-center gap-1"
             >
               <PrismicRichText field={item.text} />
               <span className="opacity-70 inline-flex">
@@ -127,7 +127,7 @@ export default function Navbar2() {
             <Link
               key={`collab-${i}`}
               href={normalizeUrl(item.collaborationslink?.url) || "#"}
-              className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
+              className="text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
             >
               <PrismicRichText field={item.text} />
             </Link>
@@ -138,7 +138,7 @@ export default function Navbar2() {
             <Link
               key={`blog-${i}`}
               href={normalizeUrl(item.bloglink?.url) || "#"}
-              className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
+              className="text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
             >
               <PrismicRichText field={item.text} />
             </Link>
@@ -150,21 +150,21 @@ export default function Navbar2() {
         <div className="flex items-center gap-3 sm:gap-4 relative">
           <button
             onClick={() => setShowSearch(!showSearch)}
-            className="text-gray-900 hover:text-gray-600"
+            className="text-gray-600 hover:text-gray-900"
           >
             <FiSearch size={20} />
           </button>
 
           <Link 
             href="/support" 
-            className="hidden md:block text-gray-900 hover:text-gray-600"
+            className="hidden md:block text-gray-600 hover:text-gray-900"
           >
             <FiUser size={20} />
           </Link>
 
           <Link 
             href="/cartpage"
-            className="text-gray-900 hover:text-gray-600"
+            className="text-gray-600 hover:text-gray-900"
           >
             <FiShoppingBag size={20} />
           </Link>

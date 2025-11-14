@@ -38,7 +38,6 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white shadow-sm top-0 left-0 z-50 relative">
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
         {/* LEFT: Logo */}
         <div className="flex-shrink-0 flex items-center">
@@ -68,19 +67,19 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-8">
           <Link
             href="/headphones"
-            className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition px-5"
+            className="flex items-center text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
           >
-            Headphones
+            Headphones <FiChevronDown size={14} className="ml-1" />
           </Link>
           <Link
             href="/earphones"
-            className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition px-3"
+            className="flex items-center text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
           >
-            Earphones
+            Earphones <FiChevronDown size={14} className="ml-1" />
           </Link>
           <Link
             href="/allproduct"
-            className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition px-13"
+            className="text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
           >
             All Products
           </Link>
@@ -91,15 +90,15 @@ export default function Navbar() {
           {/* Search Icon */}
           <button
             onClick={() => setShowSearch(!showSearch)}
-            className="text-gray-900 hover:text-gray-600"
+            className="text-gray-600 hover:text-gray-900"
           >
             <FiSearch size={20} />
           </button>
 
           {/* User Icon */}
           <Link
-            href="/support"
-            className="hidden md:block text-gray-900 hover:text-gray-600"
+            href="/account" // Changed back to /account
+            className="hidden md:block text-gray-600 hover:text-gray-900"
           >
             <FiUser size={20} />
           </Link>
@@ -107,7 +106,7 @@ export default function Navbar() {
           {/* Cart Icon */}
           <Link
             href="/cartpage"
-            className="text-gray-900 hover:text-gray-600"
+            className="text-gray-600 hover:text-gray-900"
           >
             <FiShoppingBag size={20} />
           </Link>
@@ -144,7 +143,7 @@ export default function Navbar() {
           {/* Support Button */}
           <Link
             href="/signup"
-            className="hidden md:block bg-gray-900 text-white px-4 py-2 text-sm rounded font-normal hover:bg-gray-700 transition whitespace-nowrap"
+            className="hidden md:block bg-white text-black px-5 py-3 text-sm rounded-sm font-normal hover:bg-black-700 transition blackspace-nowrap"
           >
             SIGN UP
           </Link>
