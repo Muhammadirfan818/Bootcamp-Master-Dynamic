@@ -18,6 +18,15 @@ import {
 const toArray = (field: any) =>
   field ? (Array.isArray(field) ? field : [field]) : [];
 
+// Helper function to convert localhost URLs to relative paths
+const normalizeUrl = (url: string | null | undefined): string => {
+  if (!url) return "#";
+  if (url.includes("localhost:3000")) {
+    return url.replace(/https?:\/\/localhost:3000/g, "");
+  }
+  return url;
+};
+
 export default function Navbar2() {
   const [navbar2, setNavbar2] = useState<any>(null);
   const [showSearch, setShowSearch] = useState(false);
@@ -52,7 +61,7 @@ export default function Navbar2() {
         <div className="flex-shrink-0 flex items-center">
           {toArray(navbar2.logo).map((item: any, i: number) =>
             item.logoimage ? (
-              <Link key={i} href={item.link?.url || "/"}>
+              <Link key={i} href={normalizeUrl(item.link?.url) || "/"}>
                 <PrismicNextImage
                   field={item.logoimage}
                   alt={item.logoimage?.alt || "Logo"}
@@ -75,7 +84,7 @@ export default function Navbar2() {
           {toArray(navbar2.headphone).map((item: any, i: number) => (
             <Link
               key={`headphone-${i}`}
-              href={item.headphonelink?.url || "#"}
+              href={normalizeUrl(item.headphonelink?.url) || "#"}
               className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition flex items-center gap-1"
             >
               <PrismicRichText field={item.text} />
@@ -89,7 +98,7 @@ export default function Navbar2() {
           {toArray(navbar2.earphones).map((item: any, i: number) => (
             <Link
               key={`earphones-${i}`}
-              href={item.earphonelink?.url || "#"}
+              href={normalizeUrl(item.earphonelink?.url) || "#"}
               className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition flex items-center gap-1"
             >
               <PrismicRichText field={item.text} />
@@ -103,7 +112,7 @@ export default function Navbar2() {
           {toArray(navbar2.accessories).map((item: any, i: number) => (
             <Link
               key={`accessories-${i}`}
-              href={item.accessorieslink?.url || "#"}
+              href={normalizeUrl(item.accessorieslink?.url) || "#"}
               className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition flex items-center gap-1"
             >
               <PrismicRichText field={item.text} />
@@ -117,7 +126,7 @@ export default function Navbar2() {
           {toArray(navbar2.collaborations).map((item: any, i: number) => (
             <Link
               key={`collab-${i}`}
-              href={item.collaborationslink?.url || "#"}
+              href={normalizeUrl(item.collaborationslink?.url) || "#"}
               className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
             >
               <PrismicRichText field={item.text} />
@@ -128,7 +137,7 @@ export default function Navbar2() {
           {toArray(navbar2.blog).map((item: any, i: number) => (
             <Link
               key={`blog-${i}`}
-              href={item.bloglink?.url || "#"}
+              href={normalizeUrl(item.bloglink?.url) || "#"}
               className="text-sm font-medium tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
             >
               <PrismicRichText field={item.text} />
@@ -227,7 +236,7 @@ export default function Navbar2() {
           {toArray(navbar2.headphone).map((item: any, i: number) => (
             <Link
               key={`m-headphone-${i}`}
-              href={item.headphonelink?.url || "#"}
+              href={normalizeUrl(item.headphonelink?.url) || "#"}
               className="text-gray-900 font-medium tracking-wider hover:text-gray-600 transition w-full"
             >
               <PrismicRichText field={item.text} />
@@ -238,7 +247,7 @@ export default function Navbar2() {
           {toArray(navbar2.earphones).map((item: any, i: number) => (
             <Link
               key={`m-earphones-${i}`}
-              href={item.earphonelink?.url || "#"}
+              href={normalizeUrl(item.earphonelink?.url) || "#"}
               className="text-gray-900 font-medium tracking-wider hover:text-gray-600 transition w-full"
             >
               <PrismicRichText field={item.text} />
@@ -249,7 +258,7 @@ export default function Navbar2() {
           {toArray(navbar2.accessories).map((item: any, i: number) => (
             <Link
               key={`m-accessories-${i}`}
-              href={item.accessorieslink?.url || "#"}
+              href={normalizeUrl(item.accessorieslink?.url) || "#"}
               className="text-gray-900 font-medium tracking-wider hover:text-gray-600 transition w-full"
             >
               <PrismicRichText field={item.text} />
@@ -260,7 +269,7 @@ export default function Navbar2() {
           {toArray(navbar2.collaborations).map((item: any, i: number) => (
             <Link
               key={`m-collab-${i}`}
-              href={item.collaborationslink?.url || "#"}
+              href={normalizeUrl(item.collaborationslink?.url) || "#"}
               className="text-gray-900 font-medium tracking-wider hover:text-gray-600 transition w-full"
             >
               <PrismicRichText field={item.text} />
@@ -271,7 +280,7 @@ export default function Navbar2() {
           {toArray(navbar2.blog).map((item: any, i: number) => (
             <Link
               key={`m-blog-${i}`}
-              href={item.bloglink?.url || "#"}
+              href={normalizeUrl(item.bloglink?.url) || "#"}
               className="text-gray-900 font-medium tracking-wider hover:text-gray-600 transition w-full"
             >
               <PrismicRichText field={item.text} />

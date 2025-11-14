@@ -98,7 +98,7 @@ export default function Navbar() {
 
           {/* User Icon */}
           <Link
-            href="http://localhost:3000/support"
+            href="/support"
             className="hidden md:block text-gray-900 hover:text-gray-600"
           >
             <FiUser size={20} />
@@ -106,7 +106,7 @@ export default function Navbar() {
 
           {/* Cart Icon */}
           <Link
-            href="http://localhost:3000/cartpage"
+            href="/cartpage"
             className="text-gray-900 hover:text-gray-600"
           >
             <FiShoppingBag size={20} />
@@ -143,7 +143,7 @@ export default function Navbar() {
 
           {/* Support Button */}
           <Link
-            href="http://localhost:3000/signup"
+            href="/signup"
             className="hidden md:block bg-gray-900 text-white px-4 py-2 text-sm rounded font-normal hover:bg-gray-700 transition whitespace-nowrap"
           >
             SIGN UP
@@ -202,7 +202,7 @@ export default function Navbar() {
             <FiUser size={18} /> Account
           </Link>
           <Link
-            href="http://localhost:3000/support"
+            href="/support"
             className="text-gray-900 font-medium hover:text-gray-600 transition w-full flex items-center gap-2"
           >
             <FiHelpCircle size={18} /> Support
