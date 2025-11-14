@@ -26,7 +26,7 @@ const routes: Route[] = [
   { type: "earphones", path: "/earphones" },
   { type: "headphones", path: "/headphones" },
   { type: "homepage", path: "/" },
-  { type: "product_detail", path: "/product_detail" },
+  { type: "product_detail", path: "/productdetail" },
   { type: "signup", path: "/signup" },
   { type: "support", path: "/support" },
   { type: "support2", path: "/support2" },
