@@ -1,0 +1,26 @@
+{
+  "type": "SharedSlice",
+  "id": "product_color_showcase",
+  "name": "ProductColorShowcase",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard layout for showcasing a set of products with color or style options using prominent images.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "product_image": {
+          "type": "Image",
+          "config": {
+            "label": "product image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

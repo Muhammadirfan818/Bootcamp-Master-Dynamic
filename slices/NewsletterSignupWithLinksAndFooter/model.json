@@ -1,0 +1,117 @@
+{
+  "type": "SharedSlice",
+  "id": "newsletter_signup_with_links_and_footer",
+  "name": "NewsletterSignupWithLinksAndFooter",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Newsletter signup form combined with multi-column navigation links, social icons, and a legal/company footer.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Title"
+          }
+        },
+        "email_placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "Email Placeholder"
+          }
+        },
+        "show_checkbox": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Consent Checkbox"
+          }
+        },
+        "checkbox_label": {
+          "type": "Text",
+          "config": {
+            "label": "Checkbox Label"
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Button Label"
+          }
+        },
+        "nav_columns": {
+          "type": "Group",
+          "config": {
+            "label": "Navigation Columns",
+            "fields": {
+              "column_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Column Title"
+                }
+              },
+              "column_links": {
+                "type": "Link",
+                "config": {
+                  "label": "Column Links",
+                  "allowText": true,
+                  "repeat": true,
+                  "select": null
+                }
+              }
+            }
+          }
+        },
+        "social_links": {
+          "type": "Link",
+          "config": {
+            "label": "Social Links",
+            "allowText": false,
+            "repeat": true,
+            "variants": [
+              "Instagram",
+              "Facebook",
+              "YouTube",
+              "Spotify",
+              "Twitter"
+            ],
+            "select": null
+          }
+        },
+        "footer_links": {
+          "type": "Group",
+          "config": {
+            "label": "Footer Links",
+            "fields": {
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "allowText": true,
+                  "repeat": false,
+                  "select": null
+                }
+              }
+            }
+          }
+        },
+        "cookie_settings_label": {
+          "type": "Text",
+          "config": {
+            "label": "Cookie Settings Label"
+          }
+        },
+        "company_info": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph",
+            "label": "Company Info"
+          }
+        }
+      }
+    }
+  ]
+}

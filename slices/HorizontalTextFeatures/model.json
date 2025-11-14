@@ -1,0 +1,38 @@
+{
+  "type": "SharedSlice",
+  "id": "horizontal_text_features",
+  "name": "HorizontalTextFeatures",
+  "variations": [
+    {
+      "id": "with_title_and_description",
+      "name": "With Title and Description",
+      "description": "Each feature contains a title and a description, presented in a horizontal row.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "features": {
+          "type": "Group",
+          "config": {
+            "label": "Features",
+            "fields": {
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em,hyperlink",
+                  "label": "Description"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

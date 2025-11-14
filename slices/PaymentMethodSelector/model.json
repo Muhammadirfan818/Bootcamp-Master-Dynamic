@@ -1,0 +1,35 @@
+{
+  "type": "SharedSlice",
+  "id": "payment_method_selector",
+  "name": "PaymentMethodSelector",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Basic payment method row with selectable option and logo.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "selected": {
+          "type": "Boolean",
+          "config": {
+            "label": "Selected"
+          }
+        },
+        "label": {
+          "type": "Text",
+          "config": {
+            "label": "Payment Method Label"
+          }
+        },
+        "logo": {
+          "type": "Image",
+          "config": {
+            "label": "Payment Method Logo"
+          }
+        }
+      }
+    }
+  ]
+}

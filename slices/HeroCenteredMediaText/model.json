@@ -1,0 +1,46 @@
+{
+  "type": "SharedSlice",
+  "id": "hero_centered_media_text",
+  "name": "HeroCenteredMediaText",
+  "variations": [
+    {
+      "id": "default_with_video",
+      "name": "Default with Video",
+      "description": "Hero with background media/image, prominent heading, description, and a central video play button.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "background_media": {
+          "type": "Image",
+          "config": {
+            "label": "Background Media"
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title"
+          }
+        },
+        "description": {
+          "type": "Text",
+          "config": {
+            "label": "description",
+            "placeholder": ""
+          }
+        },
+        "playicon": {
+          "type": "Image",
+          "config": {
+            "label": "playicon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

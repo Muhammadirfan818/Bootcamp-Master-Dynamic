@@ -1,0 +1,207 @@
+{
+  "type": "SharedSlice",
+  "id": "product_detail",
+  "name": "ProductDetail",
+  "variations": [
+    {
+      "id": "with_images_and_features",
+      "name": "With Images and Features",
+      "description": "Supports image gallery, product variations, add-to-cart, and key feature highlights.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "product_name": {
+          "type": "Text",
+          "config": {
+            "label": "Product Name"
+          }
+        },
+        "product_description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph,strong,em",
+            "label": "Product Description"
+          }
+        },
+        "price": {
+          "type": "Number",
+          "config": {
+            "label": "Price"
+          }
+        },
+        "price_suffix": {
+          "type": "Text",
+          "config": {
+            "label": "Price Suffix (e.g. per unit, or currency)"
+          }
+        },
+        "selected_color_label": {
+          "type": "Text",
+          "config": {
+            "label": "Selected Color Label"
+          }
+        },
+        "color_options": {
+          "type": "Group",
+          "config": {
+            "label": "Color Options",
+            "fields": {
+              "color_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Color Name"
+                }
+              },
+              "color_swatch": {
+                "type": "Image",
+                "config": {
+                  "label": "Color Swatch"
+                }
+              },
+              "is_selected": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Is Selected"
+                }
+              }
+            }
+          }
+        },
+        "collaborations": {
+          "type": "Group",
+          "config": {
+            "label": "Collaboration Colors",
+            "fields": {
+              "collaboration_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Collaboration Name"
+                }
+              }
+            }
+          }
+        },
+        "has_engraving_option": {
+          "type": "Boolean",
+          "config": {
+            "label": "Has Engraving Option"
+          }
+        },
+        "engraving_price": {
+          "type": "Number",
+          "config": {
+            "label": "Engraving Price"
+          }
+        },
+        "add_to_cart_link": {
+          "type": "Link",
+          "config": {
+            "label": "Add To Cart Button",
+            "allowText": true,
+            "repeat": false,
+            "variants": [
+              "Primary"
+            ],
+            "select": null
+          }
+        },
+        "purchase_protection_note": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph,strong",
+            "label": "Purchase Protection Note"
+          }
+        },
+        "features": {
+          "type": "Group",
+          "config": {
+            "label": "Features List",
+            "fields": {
+              "feature_icon": {
+                "type": "Image",
+                "config": {
+                  "label": "Feature Icon"
+                }
+              },
+              "feature_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Feature Label"
+                }
+              },
+              "feature_value": {
+                "type": "Text",
+                "config": {
+                  "label": "Feature Value"
+                }
+              }
+            }
+          }
+        },
+        "text": {
+          "type": "Text",
+          "config": {
+            "label": "text",
+            "placeholder": ""
+          }
+        },
+        "gallery_images": {
+          "type": "Group",
+          "config": {
+            "label": "Gallery Images",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Gallery Image"
+                }
+              }
+            }
+          }
+        },
+        "award_badges": {
+          "type": "Group",
+          "config": {
+            "label": "Award Badges",
+            "fields": {
+              "badge_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Badge Image"
+                }
+              },
+              "badge_label": {
+                "type": "Text",
+                "config": {
+                  "label": "Badge Label"
+                }
+              }
+            }
+          }
+        },
+        "side_badge": {
+          "type": "Image",
+          "config": {
+            "label": "side badge",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "product_finder_link": {
+          "type": "Link",
+          "config": {
+            "label": "Product Finder Link",
+            "allowText": true,
+            "repeat": false,
+            "variants": [
+              "Product Finder"
+            ],
+            "select": null
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

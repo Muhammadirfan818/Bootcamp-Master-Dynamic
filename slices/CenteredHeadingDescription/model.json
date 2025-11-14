@@ -1,0 +1,31 @@
+{
+  "type": "SharedSlice",
+  "id": "centered_heading_description",
+  "name": "CenteredHeadingDescription",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Centered heading and description with no additional content or media.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Title"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em",
+            "label": "Description"
+          }
+        }
+      }
+    }
+  ]
+}

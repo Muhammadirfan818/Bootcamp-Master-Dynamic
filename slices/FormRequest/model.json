@@ -1,0 +1,118 @@
+{
+  "type": "SharedSlice",
+  "id": "form_request",
+  "name": "FormRequest",
+  "variations": [
+    {
+      "id": "default_form_request",
+      "name": "Default",
+      "description": "Standard variation for a single-column request or contact form supporting text, select, file upload fields, and a submit button.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "little_text": {
+          "type": "Text",
+          "config": {
+            "label": "little text",
+            "placeholder": ""
+          }
+        },
+        "next_little_text": {
+          "type": "Text",
+          "config": {
+            "label": "next little text",
+            "placeholder": ""
+          }
+        },
+        "searchbar_placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "searchbar placeholder",
+            "placeholder": ""
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title"
+          }
+        },
+        "email_label": {
+          "type": "Text",
+          "config": {
+            "label": "Email Label"
+          }
+        },
+        "subject_label": {
+          "type": "Text",
+          "config": {
+            "label": "Subject Label"
+          }
+        },
+        "description_label": {
+          "type": "Text",
+          "config": {
+            "label": "Description Label"
+          }
+        },
+        "description_helper": {
+          "type": "Text",
+          "config": {
+            "label": "Description Helper Text"
+          }
+        },
+        "request_type_label": {
+          "type": "Text",
+          "config": {
+            "label": "Request Type Label"
+          }
+        },
+        "request_type_options": {
+          "type": "Select",
+          "config": {
+            "label": "Request Type Options",
+            "options": [
+              "General",
+              "Support",
+              "Other"
+            ]
+          }
+        },
+        "request_helper_text": {
+          "type": "Text",
+          "config": {
+            "label": "request helper text",
+            "placeholder": ""
+          }
+        },
+        "attachments_label": {
+          "type": "Text",
+          "config": {
+            "label": "Attachments Label"
+          }
+        },
+        "attachments_optional": {
+          "type": "Boolean",
+          "config": {
+            "label": "Attachments Optional"
+          }
+        },
+        "file_upload_prompt": {
+          "type": "Text",
+          "config": {
+            "label": "File Upload Prompt"
+          }
+        },
+        "submit_button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Submit Button Label"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"product_image",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
+										"width": 3456,
+										"height": 4320
+									},
+									"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
+									"width": 3456,
+									"height": 4320,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "ate"
+								}
+							],
+							[
+								"quantity",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "breath",
+									"type": "Text"
+								}
+							],
+							[
+								"product_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "driving",
+									"type": "Text"
+								}
+							],
+							[
+								"product_option",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "apartment",
+									"type": "Text"
+								}
+							],
+							[
+								"item_price",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "50",
+									"type": "Number"
+								}
+							]
+						]
+					}
+				]
+			},
+			"discount_placeholder": {
+				"__TYPE__": "FieldContent",
+				"value": "object",
+				"type": "Text"
+			},
+			"discount_button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "transportation",
+				"type": "Text"
+			},
+			"subtotal": {
+				"__TYPE__": "FieldContent",
+				"value": "90",
+				"type": "Number"
+			},
+			"shipping_label": {
+				"__TYPE__": "FieldContent",
+				"value": "double",
+				"type": "Text"
+			},
+			"shipping_instruction": {
+				"__TYPE__": "FieldContent",
+				"value": "slip",
+				"type": "Text"
+			},
+			"total": {
+				"__TYPE__": "FieldContent",
+				"value": "73",
+				"type": "Number"
+			},
+			"currency_label": {
+				"__TYPE__": "FieldContent",
+				"value": "drawn",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

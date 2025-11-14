@@ -1,0 +1,105 @@
+{
+  "type": "SharedSlice",
+  "id": "payment_method_form",
+  "name": "PaymentMethodForm",
+  "variations": [
+    {
+      "id": "credit_card_input",
+      "name": "Credit Card Input Form",
+      "description": "Form fields for collecting credit card information, supporting card type icons and a checkbox for billing address preference.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "headingdescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "headingdescription",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "cartcheck": {
+          "type": "Boolean",
+          "config": {
+            "label": "cartcheck",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading3",
+            "label": "Title"
+          }
+        },
+        "payment_methods": {
+          "type": "Group",
+          "config": {
+            "label": "Payment Method Icons",
+            "fields": {
+              "icon": {
+                "type": "Image",
+                "config": {
+                  "label": "Icon"
+                }
+              }
+            }
+          }
+        },
+        "card_number_placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "Card Number Placeholder"
+          }
+        },
+        "expiration_placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "Expiration Date Placeholder"
+          }
+        },
+        "security_code_placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "Security Code Placeholder"
+          }
+        },
+        "name_on_card_placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "Name on Card Placeholder"
+          }
+        },
+        "use_shipping_address_as_billing": {
+          "type": "Boolean",
+          "config": {
+            "label": "Use Shipping Address as Billing Address (Checked by Default)"
+          }
+        },
+        "shipping_text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Shipping text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

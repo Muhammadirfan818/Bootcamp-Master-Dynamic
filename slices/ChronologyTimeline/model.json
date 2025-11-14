@@ -1,0 +1,83 @@
+{
+  "type": "SharedSlice",
+  "id": "chronology_timeline",
+  "name": "ChronologyTimeline",
+  "variations": [
+    {
+      "id": "with_title_and_navigation",
+      "name": "With Title and Navigation",
+      "description": "Timeline including a section title, navigation buttons, and a group of yearly milestones each with year and description fields.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Title"
+          }
+        },
+        "milestones": {
+          "type": "Group",
+          "config": {
+            "label": "Milestones",
+            "fields": {
+              "years": {
+                "type": "Image",
+                "config": {
+                  "label": "years",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Description1",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,strong,em,hyperlink"
+                }
+              },
+              "discription2": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "discription2",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "discription3": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "discription3",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "discription4": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "discription4",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              }
+            }
+          }
+        },
+        "show_navigation": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show navigation arrows"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

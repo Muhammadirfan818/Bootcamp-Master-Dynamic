@@ -1,0 +1,51 @@
+{
+  "type": "SharedSlice",
+  "id": "empty_state_message",
+  "name": "EmptyStateMessage",
+  "variations": [
+    {
+      "id": "cart_empty_message",
+      "name": "Cart Empty Message",
+      "description": "Shows an empty cart state with an icon, a message, and a button to continue shopping.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "icon": {
+          "type": "Image",
+          "config": {
+            "label": "Icon"
+          }
+        },
+        "message": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Message"
+          }
+        },
+        "link": {
+          "type": "Group",
+          "config": {
+            "label": "link",
+            "repeat": true,
+            "fields": {
+              "links": {
+                "type": "Link",
+                "config": {
+                  "label": "links",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true,
+                  "repeat": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

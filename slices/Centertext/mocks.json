@@ -1,0 +1,29 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"centertext": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nisi pariatur aliquip occaecat elit ut culpa ut. Qui ea eu tempor sunt magna enim do laborum irure commodo ea. Excepteur ut excepteur deserunt sint pariatur nulla tempor nisi ut excepteur aliqua tempor cillum in officia."
+						}
+					}
+				]
+			},
+			"button": {
+				"key": "c071e438-452f-4c24-a488-dc9f29a5af20",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev",
+					"text": "knew"
+				}
+			}
+		},
+		"items": []
+	}
+]

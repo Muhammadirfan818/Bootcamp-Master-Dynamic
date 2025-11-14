@@ -1,0 +1,97 @@
+{
+  "type": "SharedSlice",
+  "id": "cart_summary",
+  "name": "CartSummary",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard shopping cart summary with product list, discount input, and order totals.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Items",
+            "fields": {
+              "product_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Product Image"
+                }
+              },
+              "quantity": {
+                "type": "Text",
+                "config": {
+                  "label": "Quantity"
+                }
+              },
+              "product_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Product Name"
+                }
+              },
+              "product_option": {
+                "type": "Text",
+                "config": {
+                  "label": "Product Option"
+                }
+              },
+              "item_price": {
+                "type": "Number",
+                "config": {
+                  "label": "Item Price"
+                }
+              }
+            }
+          }
+        },
+        "discount_placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "Discount Code Placeholder"
+          }
+        },
+        "discount_button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Discount Button Label"
+          }
+        },
+        "subtotal": {
+          "type": "Number",
+          "config": {
+            "label": "Subtotal"
+          }
+        },
+        "shipping_label": {
+          "type": "Text",
+          "config": {
+            "label": "Shipping Label"
+          }
+        },
+        "shipping_instruction": {
+          "type": "Text",
+          "config": {
+            "label": "Shipping Instruction"
+          }
+        },
+        "total": {
+          "type": "Number",
+          "config": {
+            "label": "Total"
+          }
+        },
+        "currency_label": {
+          "type": "Text",
+          "config": {
+            "label": "Currency Label"
+          }
+        }
+      }
+    }
+  ]
+}

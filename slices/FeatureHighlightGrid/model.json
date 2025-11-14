@@ -1,0 +1,67 @@
+{
+  "type": "SharedSlice",
+  "id": "feature_highlight_grid",
+  "name": "FeatureHighlightGrid",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Displays a grid of feature cards with images and titles, accompanied by headline, intro, description, and CTA.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "heading2",
+            "label": "Title"
+          }
+        },
+        "introduction": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em",
+            "label": "Introduction"
+          }
+        },
+        "features": {
+          "type": "Group",
+          "config": {
+            "label": "Features",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image"
+                }
+              },
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title"
+                }
+              }
+            }
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,hyperlink",
+            "label": "Description"
+          }
+        },
+        "cta": {
+          "type": "Link",
+          "config": {
+            "label": "Call to Action",
+            "allowText": true,
+            "repeat": false,
+            "select": null
+          }
+        }
+      }
+    }
+  ]
+}

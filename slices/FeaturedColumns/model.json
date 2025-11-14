@@ -1,0 +1,51 @@
+{
+  "type": "SharedSlice",
+  "id": "featured_columns",
+  "name": "FeaturedColumns",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard layout with a section headline and a set of feature columns, each featuring an image, a title, and descriptive text.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "headline": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Headline"
+          }
+        },
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Columns",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image"
+                }
+              },
+              "title": {
+                "type": "Text",
+                "config": {
+                  "label": "Title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Description"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

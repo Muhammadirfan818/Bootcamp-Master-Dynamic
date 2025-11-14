@@ -1,0 +1,297 @@
+{
+  "format": "custom",
+  "id": "navbar2",
+  "label": "navbar2",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logo": {
+        "type": "Group",
+        "config": {
+          "label": "logo",
+          "repeat": true,
+          "fields": {
+            "logoimage": {
+              "type": "Image",
+              "config": {
+                "label": "mainlogo",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "homelink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "headphone": {
+        "type": "Group",
+        "config": {
+          "label": "headphone",
+          "repeat": true,
+          "fields": {
+            "text": {
+              "type": "StructuredText",
+              "config": {
+                "label": "text",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "headphonelink": {
+              "type": "Link",
+              "config": {
+                "label": "headphonelink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "earphones": {
+        "type": "Group",
+        "config": {
+          "label": "Earphones",
+          "repeat": true,
+          "fields": {
+            "text": {
+              "type": "StructuredText",
+              "config": {
+                "label": "text",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "earphonelink": {
+              "type": "Link",
+              "config": {
+                "label": "earphonelink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "accessories": {
+        "type": "Group",
+        "config": {
+          "label": "Accessories",
+          "repeat": true,
+          "fields": {
+            "text": {
+              "type": "StructuredText",
+              "config": {
+                "label": "text",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "accessorieslink": {
+              "type": "Link",
+              "config": {
+                "label": "Accessorieslink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "collaborations": {
+        "type": "Group",
+        "config": {
+          "label": "Collaborations",
+          "repeat": true,
+          "fields": {
+            "text": {
+              "type": "StructuredText",
+              "config": {
+                "label": "text",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "collaborationslink": {
+              "type": "Link",
+              "config": {
+                "label": "Collaborationslink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "blog": {
+        "type": "Group",
+        "config": {
+          "label": "Blog",
+          "repeat": true,
+          "fields": {
+            "text": {
+              "type": "StructuredText",
+              "config": {
+                "label": "text",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "bloglink": {
+              "type": "Link",
+              "config": {
+                "label": "bloglink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "searchicon": {
+        "type": "Group",
+        "config": {
+          "label": "searchicon",
+          "repeat": true,
+          "fields": {
+            "searchicon": {
+              "type": "Image",
+              "config": {
+                "label": "searchicon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "searchiconbar": {
+              "type": "Link",
+              "config": {
+                "label": "searchiconbar",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "supporticon": {
+        "type": "Group",
+        "config": {
+          "label": "supporticon",
+          "repeat": true,
+          "fields": {
+            "supporticon": {
+              "type": "Image",
+              "config": {
+                "label": "supporticon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "supportlink": {
+              "type": "Link",
+              "config": {
+                "label": "supportlink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "carticon": {
+        "type": "Group",
+        "config": {
+          "label": "carticon",
+          "repeat": true,
+          "fields": {
+            "carticon": {
+              "type": "Image",
+              "config": {
+                "label": "carticon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "cartlink": {
+              "type": "Link",
+              "config": {
+                "label": "cartlink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "signup": {
+        "type": "Group",
+        "config": {
+          "label": "signup",
+          "repeat": true,
+          "fields": {
+            "text": {
+              "type": "StructuredText",
+              "config": {
+                "label": "text",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "signuplink": {
+              "type": "Link",
+              "config": {
+                "label": "signuplink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "format": "page",
+  "id": "product_detail",
+  "label": "Product detail",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "product_color_showcase": {
+              "type": "SharedSlice"
+            },
+            "newsletter_signup_with_links_and_footer": {
+              "type": "SharedSlice"
+            },
+            "recently_viewed_products": {
+              "type": "SharedSlice"
+            },
+            "media_text_cta": {
+              "type": "SharedSlice"
+            },
+            "support_links": {
+              "type": "SharedSlice"
+            },
+            "product_recommendations": {
+              "type": "SharedSlice"
+            },
+            "whats_included": {
+              "type": "SharedSlice"
+            },
+            "accordion": {
+              "type": "SharedSlice"
+            },
+            "centertext": {
+              "type": "SharedSlice"
+            },
+            "testimonial_carousel": {
+              "type": "SharedSlice"
+            },
+            "product_gallery_grid": {
+              "type": "SharedSlice"
+            },
+            "centered_heading_description": {
+              "type": "SharedSlice"
+            },
+            "feature_hotspot_hero": {
+              "type": "SharedSlice"
+            },
+            "fact_highlight": {
+              "type": "SharedSlice"
+            },
+            "feature_split_grid": {
+              "type": "SharedSlice"
+            },
+            "horizontal_text_features": {
+              "type": "SharedSlice"
+            },
+            "hero_centered_media_text": {
+              "type": "SharedSlice"
+            },
+            "navigation_menu": {
+              "type": "SharedSlice"
+            },
+            "product_detail": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      },
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}

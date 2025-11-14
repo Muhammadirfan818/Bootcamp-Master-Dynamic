@@ -1,0 +1,54 @@
+{
+  "type": "SharedSlice",
+  "id": "hero_slider",
+  "name": "HeroSlider",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard hero slider with background image, text content, button, and navigation dots.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "slides": {
+          "type": "Group",
+          "config": {
+            "label": "Slides",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "Title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em,hyperlink",
+                  "label": "Description"
+                }
+              },
+              "primary_cta": {
+                "type": "Link",
+                "config": {
+                  "label": "Primary CTA",
+                  "allowText": true,
+                  "repeat": false,
+                  "select": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

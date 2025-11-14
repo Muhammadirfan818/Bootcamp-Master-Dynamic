@@ -1,0 +1,73 @@
+{
+  "type": "SharedSlice",
+  "id": "product_recommendations",
+  "name": "ProductRecommendations",
+  "variations": [
+    {
+      "id": "horizontal_grid",
+      "name": "Horizontal Grid",
+      "description": "A horizontal grid of products, each item showing image, title, price, stock status, and optional action (button or label). Best for product recommendations carousels or grids.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "headline": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Headline"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink",
+            "label": "Description"
+          }
+        },
+        "products": {
+          "type": "Group",
+          "config": {
+            "label": "Products",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Product Image"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading4",
+                  "label": "Product Title"
+                }
+              },
+              "price": {
+                "type": "Number",
+                "config": {
+                  "label": "Price"
+                }
+              },
+              "sold_out": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Sold Out"
+                }
+              },
+              "add_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Add Link",
+                  "allowText": true,
+                  "repeat": false,
+                  "select": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

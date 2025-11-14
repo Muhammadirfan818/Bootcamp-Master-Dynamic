@@ -1,0 +1,44 @@
+{
+  "type": "SharedSlice",
+  "id": "header_navigation",
+  "name": "HeaderNavigation",
+  "variations": [
+    {
+      "id": "logo_left_link_button_right",
+      "name": "Logo Left, Link & Button Right",
+      "description": "Displays a logo on the left, a single link, and a button aligned on the right.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "logo": {
+          "type": "Image",
+          "config": {
+            "label": "Logo"
+          }
+        },
+        "nav_link": {
+          "type": "Link",
+          "config": {
+            "label": "Navigation Link",
+            "allowText": true,
+            "repeat": false,
+            "select": null
+          }
+        },
+        "submit_request": {
+          "type": "Link",
+          "config": {
+            "label": "submit request",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

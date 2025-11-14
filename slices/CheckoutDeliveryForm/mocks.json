@@ -1,0 +1,187 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "standard_with_notice",
+		"primary": {
+			"country": {
+				"__TYPE__": "FieldContent",
+				"value": "mock_option",
+				"type": "Select"
+			},
+			"first_name": {
+				"__TYPE__": "FieldContent",
+				"value": "root",
+				"type": "Text"
+			},
+			"last_name": {
+				"__TYPE__": "FieldContent",
+				"value": "had",
+				"type": "Text"
+			},
+			"company": {
+				"__TYPE__": "FieldContent",
+				"value": "reason",
+				"type": "Text"
+			},
+			"address": {
+				"__TYPE__": "FieldContent",
+				"value": "using",
+				"type": "Text"
+			},
+			"apartment_suite": {
+				"__TYPE__": "FieldContent",
+				"value": "sky",
+				"type": "Text"
+			},
+			"city": {
+				"__TYPE__": "FieldContent",
+				"value": "trace",
+				"type": "Text"
+			},
+			"state": {
+				"__TYPE__": "FieldContent",
+				"value": "mock_option",
+				"type": "Select"
+			},
+			"zip_code": {
+				"__TYPE__": "FieldContent",
+				"value": "blow",
+				"type": "Text"
+			},
+			"phone": {
+				"__TYPE__": "FieldContent",
+				"value": "small",
+				"type": "Text"
+			},
+			"subscribe_news_offers": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"headtext": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Qui est aliqua ut consectetur sit occaecat sit enim consequat duis sunt non aute. Exercitation do qui sint cillum laborum esse id Lorem veniam incididunt sunt."
+						}
+					}
+				]
+			},
+			"shipping_method": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"shippingtitle",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ea consectetur mollit excepteur consequat velit ea aliquip deserunt sit. Dolore ut dolor enim esse id do dolor duis sit aliqua in. Commodo cupidatat esse eiusmod et culpa esse adipisicing ea ipsum tempor in aute ea dolore."
+											}
+										}
+									]
+								}
+							],
+							[
+								"shipping_method_placeholder",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Cupidatat ea aute minim pariatur sunt consectetur minim mollit enim elit occaecat. Voluptate ea culpa ullamco sint reprehenderit amet labore eiusmod do veniam exercitation exercitation nisi irure."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"text_with_news_offer": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nostrud proident veniam voluptate est aliquip dolore."
+						}
+					}
+				]
+			},
+			"shipping_notice": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"logo",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+										"width": 4752,
+										"height": 3168
+									},
+									"url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+									"width": 4752,
+									"height": 3168,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "audience",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"shipping_noitce_title",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Sunt tempor consectetur laboris pariatur officia aute aliquip deserunt qui labore minim. Dolor nulla ex ut esse ullamco irure laboris esse."
+											}
+										}
+									]
+								}
+							],
+							[
+								"shipping_notice_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ea minim aliquip dolore commodo. Nisi est elit cupidatat dolor eu esse labore aute fugiat fugiat laborum ex sint. Tempor eiusmod consequat incididunt sint duis esse cillum cupidatat dolore reprehenderit commodo."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

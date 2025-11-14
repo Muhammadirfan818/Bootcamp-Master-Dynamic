@@ -1,0 +1,56 @@
+{
+  "type": "SharedSlice",
+  "id": "feature_hotspot_hero",
+  "name": "FeatureHotspotHero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Displays a main background image, a headline on the left, and multiple clickable feature hotspots over the product image.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "headline": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "heading2,strong,em",
+            "label": "Headline"
+          }
+        },
+        "main_image": {
+          "type": "Image",
+          "config": {
+            "label": "Main Image"
+          }
+        },
+        "hotspots": {
+          "type": "Group",
+          "config": {
+            "label": "Hotspots",
+            "fields": {
+              "position_x_percent": {
+                "type": "Number",
+                "config": {
+                  "label": "X Position (%)"
+                }
+              },
+              "position_y_percent": {
+                "type": "Number",
+                "config": {
+                  "label": "Y Position (%)"
+                }
+              },
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Hotspot Tooltip Label"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

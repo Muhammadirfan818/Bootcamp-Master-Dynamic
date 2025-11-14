@@ -1,0 +1,46 @@
+{
+  "type": "SharedSlice",
+  "id": "accordion",
+  "name": "Accordion",
+  "variations": [
+    {
+      "id": "accordion_with_title",
+      "name": "Accordion with Title",
+      "description": "Accordion section with a section title and a group of expandable/collapsible items, each with a heading and rich text content.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "section_title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Section Title"
+          }
+        },
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Accordion Items",
+            "fields": {
+              "item_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Item Title"
+                }
+              },
+              "item_content": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em,hyperlink,list-item,o-list-item",
+                  "label": "Item Content"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

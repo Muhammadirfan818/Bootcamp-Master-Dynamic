@@ -1,0 +1,50 @@
+{
+  "type": "SharedSlice",
+  "id": "fact_highlight",
+  "name": "FactHighlight",
+  "variations": [
+    {
+      "id": "centered_large_fact",
+      "name": "Centered Fact (Large Number)",
+      "description": "A layout with a large centered fact/statistic value, a headline, and a supporting description, ideal for drawing attention to one key metric.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "headline": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph,strong,em",
+            "label": "Headline"
+          }
+        },
+        "highlighted_value": {
+          "type": "Text",
+          "config": {
+            "label": "Highlighted Value"
+          }
+        },
+        "highlighted_unit": {
+          "type": "Text",
+          "config": {
+            "label": "Highlighted Unit"
+          }
+        },
+        "context_text": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph,strong,em",
+            "label": "Context Text"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink",
+            "label": "Description"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "type": "SharedSlice",
+  "id": "checkout_delivery_form",
+  "name": "CheckoutDeliveryForm",
+  "variations": [
+    {
+      "id": "standard_with_notice",
+      "name": "Standard with Notice",
+      "description": "A delivery address form containing personal and address fields, a newsletter opt-in, dynamic shipping methods, and a shipping notice.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "headtext": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Headtext",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "country": {
+          "type": "Select",
+          "config": {
+            "label": "Country/Region",
+            "options": []
+          }
+        },
+        "first_name": {
+          "type": "Text",
+          "config": {
+            "label": "First name"
+          }
+        },
+        "last_name": {
+          "type": "Text",
+          "config": {
+            "label": "Last name"
+          }
+        },
+        "company": {
+          "type": "Text",
+          "config": {
+            "label": "Company (optional)"
+          }
+        },
+        "address": {
+          "type": "Text",
+          "config": {
+            "label": "Address"
+          }
+        },
+        "apartment_suite": {
+          "type": "Text",
+          "config": {
+            "label": "Apartment, suite, etc. (optional)"
+          }
+        },
+        "city": {
+          "type": "Text",
+          "config": {
+            "label": "City"
+          }
+        },
+        "state": {
+          "type": "Select",
+          "config": {
+            "label": "State",
+            "options": []
+          }
+        },
+        "zip_code": {
+          "type": "Text",
+          "config": {
+            "label": "ZIP code"
+          }
+        },
+        "phone": {
+          "type": "Text",
+          "config": {
+            "label": "Phone"
+          }
+        },
+        "subscribe_news_offers": {
+          "type": "Boolean",
+          "config": {
+            "label": "Text me with news and offers"
+          }
+        },
+        "text_with_news_offer": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text with news offer",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "shipping_method": {
+          "type": "Group",
+          "config": {
+            "label": "Shipping Method",
+            "repeat": true,
+            "fields": {
+              "shippingtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Shippingtitle",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "shipping_method_placeholder": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Shipping Method Placeholder",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              }
+            }
+          }
+        },
+        "shipping_notice": {
+          "type": "Group",
+          "config": {
+            "label": "shipping notice",
+            "repeat": true,
+            "fields": {
+              "logo": {
+                "type": "Image",
+                "config": {
+                  "label": "logo",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "shipping_noitce_title": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Shipping Noitce title",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "shipping_notice_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "shipping Notice description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

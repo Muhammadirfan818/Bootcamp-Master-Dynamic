@@ -1,0 +1,305 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "with_images_and_features",
+		"primary": {
+			"product_name": {
+				"__TYPE__": "FieldContent",
+				"value": "fly",
+				"type": "Text"
+			},
+			"product_description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Deserunt sint velit exercitation laborum culpa laboris excepteur proident excepteur ex minim. Eu sint proident elit dolor nostrud adipisicing veniam occaecat officia magna."
+						}
+					}
+				]
+			},
+			"price": {
+				"__TYPE__": "FieldContent",
+				"value": "86",
+				"type": "Number"
+			},
+			"price_suffix": {
+				"__TYPE__": "FieldContent",
+				"value": "globe",
+				"type": "Text"
+			},
+			"selected_color_label": {
+				"__TYPE__": "FieldContent",
+				"value": "basket",
+				"type": "Text"
+			},
+			"color_options": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"color_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "discuss",
+									"type": "Text"
+								}
+							],
+							[
+								"color_swatch",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+										"width": 3810,
+										"height": 5715
+									},
+									"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+									"width": 3810,
+									"height": 5715,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "chair",
+									"credits": null,
+									"__TYPE__": "ImageContent"
+								}
+							],
+							[
+								"is_selected",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": false
+								}
+							]
+						]
+					}
+				]
+			},
+			"collaborations": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"collaboration_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "give",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"has_engraving_option": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"engraving_price": {
+				"__TYPE__": "FieldContent",
+				"value": "57",
+				"type": "Number"
+			},
+			"add_to_cart_link": {
+				"key": "c7b87b09-8ebe-4bd0-ad80-6ee61d7b9abd",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com",
+					"text": "silence",
+					"variant": "Primary"
+				}
+			},
+			"purchase_protection_note": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Cillum nostrud qui laboris minim ea. Deserunt voluptate est ex."
+						}
+					}
+				]
+			},
+			"features": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"feature_icon",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+										"width": 4172,
+										"height": 4000
+									},
+									"url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+									"width": 4172,
+									"height": 4000,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "drink",
+									"credits": null,
+									"__TYPE__": "ImageContent"
+								}
+							],
+							[
+								"feature_label",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "pot",
+									"type": "Text"
+								}
+							],
+							[
+								"feature_value",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "construction",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"gallery_images": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+										"width": 3168,
+										"height": 4752
+									},
+									"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+									"width": 3168,
+									"height": 4752,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "up",
+									"credits": null,
+									"__TYPE__": "ImageContent"
+								}
+							]
+						]
+					}
+				]
+			},
+			"award_badges": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"badge_image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+										"width": 3810,
+										"height": 5715
+									},
+									"url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117",
+									"width": 3810,
+									"height": 5715,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "wise",
+									"credits": null,
+									"__TYPE__": "ImageContent"
+								}
+							],
+							[
+								"badge_label",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "rays",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			},
+			"product_finder_link": {
+				"key": "04b5fbe6-19a4-4bc2-bb33-839b7db2ccb8",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://twitter.com",
+					"text": "bear",
+					"variant": "Product Finder"
+				}
+			},
+			"text": {
+				"__TYPE__": "FieldContent",
+				"value": "tin",
+				"type": "Text"
+			},
+			"side_badge": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+					"width": 3648,
+					"height": 4560
+				},
+				"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+				"width": 3648,
+				"height": 4560,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"alt": "winter",
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			}
+		},
+		"items": []
+	}
+]

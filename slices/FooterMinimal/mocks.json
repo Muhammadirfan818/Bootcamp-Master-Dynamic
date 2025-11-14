@@ -1,0 +1,35 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default_footer_minimal",
+		"primary": {
+			"note": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Excepteur do tempor ipsum sit dolor proident esse tempor consectetur. Anim sint ullamco aliqua magna ea cillum pariatur ad. Nisi in esse elit velit laboris esse deserunt veniam ut occaecat consectetur est ea veniam amet."
+						}
+					}
+				]
+			},
+			"links": {
+				"__TYPE__": "RepeatableContent",
+				"type": "Link",
+				"value": [
+					{
+						"key": "b3c43d95-82fe-4cf9-875a-6b4c34d4cd10",
+						"__TYPE__": "LinkContent",
+						"value": {
+							"__TYPE__": "ExternalLink",
+							"url": "http://twitter.com",
+							"text": "graph"
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

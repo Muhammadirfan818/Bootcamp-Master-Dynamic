@@ -1,0 +1,20 @@
+{
+  "format": "custom",
+  "id": "headtext",
+  "label": "headtext",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "headtext": {
+        "type": "StructuredText",
+        "config": {
+          "label": "HeadText",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "heading6,strong"
+        }
+      }
+    }
+  }
+}

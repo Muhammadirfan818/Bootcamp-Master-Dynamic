@@ -1,0 +1,26 @@
+{
+  "type": "SharedSlice",
+  "id": "navigation_menu",
+  "name": "NavigationMenu",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Displays a row of navigation links. Each link can have customizable text and URL.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "menu_links": {
+          "type": "Link",
+          "config": {
+            "label": "Menu Links",
+            "allowText": true,
+            "repeat": true,
+            "select": null
+          }
+        }
+      }
+    }
+  ]
+}

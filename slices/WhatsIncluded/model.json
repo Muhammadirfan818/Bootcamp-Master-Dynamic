@@ -1,0 +1,44 @@
+{
+  "type": "SharedSlice",
+  "id": "whats_included",
+  "name": "WhatsIncluded",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Grid of included items, each with an icon/image and label. Headline at top.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "headline": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Headline"
+          }
+        },
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Included Items",
+            "fields": {
+              "icon": {
+                "type": "Image",
+                "config": {
+                  "label": "Item Icon"
+                }
+              },
+              "label": {
+                "type": "Text",
+                "config": {
+                  "label": "Item Label"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

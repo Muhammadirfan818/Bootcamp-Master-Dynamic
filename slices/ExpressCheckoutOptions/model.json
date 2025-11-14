@@ -1,0 +1,149 @@
+{
+  "type": "SharedSlice",
+  "id": "express_checkout_options",
+  "name": "ExpressCheckoutOptions",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard layout with horizontal express checkout buttons, an optional show more options toggle, a divider, and a contact input section.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "startinglogo": {
+          "type": "Group",
+          "config": {
+            "label": "startinglogo",
+            "repeat": true,
+            "fields": {
+              "logoimage": {
+                "type": "Image",
+                "config": {
+                  "label": "logoimage",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "logolink": {
+                "type": "Link",
+                "config": {
+                  "label": "logolink",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true,
+                  "repeat": false
+                }
+              }
+            }
+          }
+        },
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Title"
+          }
+        },
+        "checkout_methods": {
+          "type": "Group",
+          "config": {
+            "label": "Checkout Methods",
+            "fields": {
+              "provider_logo": {
+                "type": "Image",
+                "config": {
+                  "label": "Provider Logo"
+                }
+              },
+              "provider_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Provider Name"
+                }
+              },
+              "checkout_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Checkout Link",
+                  "allowText": false,
+                  "repeat": false,
+                  "select": null
+                }
+              }
+            }
+          }
+        },
+        "show_more_options_toggle": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show More Options Toggle"
+          }
+        },
+        "divider_text": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Divider Text"
+          }
+        },
+        "contact_section_title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Contact Section Title"
+          }
+        },
+        "signin": {
+          "type": "Group",
+          "config": {
+            "label": "signin",
+            "repeat": true,
+            "fields": {
+              "signintext": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "signintext",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "signinlink": {
+                "type": "Link",
+                "config": {
+                  "label": "signinlink",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true,
+                  "repeat": false
+                }
+              }
+            }
+          }
+        },
+        "email_placeholder": {
+          "type": "Text",
+          "config": {
+            "label": "Email Placeholder"
+          }
+        },
+        "show_newsletter_checkbox": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Newsletter Checkbox"
+          }
+        },
+        "newsletter_checkbox_label": {
+          "type": "Text",
+          "config": {
+            "label": "Newsletter Checkbox Label"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

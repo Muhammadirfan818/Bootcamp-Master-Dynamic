@@ -1,0 +1,70 @@
+{
+  "type": "SharedSlice",
+  "id": "recently_viewed_products",
+  "name": "RecentlyViewedProducts",
+  "variations": [
+    {
+      "id": "single_product_left_image_swatches",
+      "name": "Single Product with Image and Swatches (Left)",
+      "description": "Displays one recently viewed product with the product image on the left, info (title, price, description) on the right, multiple swatch/color/option selectors, and optional engrave/cta button.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "section_title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Section Title"
+          }
+        },
+        "products": {
+          "type": "Group",
+          "config": {
+            "label": "Products",
+            "fields": {
+              "product_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Product Image"
+                }
+              },
+              "product_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading4",
+                  "label": "Product Title"
+                }
+              },
+              "product_price": {
+                "type": "Number",
+                "config": {
+                  "label": "Product Price"
+                }
+              },
+              "product_description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "label": "Product Description"
+                }
+              },
+              "color_swatches": {
+                "type": "Image",
+                "config": {
+                  "label": "Color Swatches"
+                }
+              },
+              "show_engrave_option": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Show Engrave Option"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

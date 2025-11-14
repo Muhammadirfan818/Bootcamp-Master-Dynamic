@@ -1,0 +1,46 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"section_heading": {
+				"__TYPE__": "FieldContent",
+				"value": "dangerous",
+				"type": "Text"
+			},
+			"testimonials": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"quote",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Est irure dolore mollit quis dolor excepteur enim anim dolor sint. Aliqua Lorem anim sit occaecat et consequat."
+											}
+										}
+									]
+								}
+							],
+							[
+								"attribution",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "fine",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

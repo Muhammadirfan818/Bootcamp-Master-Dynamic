@@ -1,0 +1,103 @@
+{
+  "type": "SharedSlice",
+  "id": "product_feature_grid",
+  "name": "ProductFeatureGrid",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard grid layout for featured products with image, color variants, tags, and details.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "section_title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Section Title"
+          }
+        },
+        "products": {
+          "type": "Group",
+          "config": {
+            "label": "Products",
+            "fields": {
+              "main_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Main Image"
+                }
+              },
+              "label_text": {
+                "type": "Text",
+                "config": {
+                  "label": "Product Label (e.g. New In, Sold Out)"
+                }
+              },
+              "label_variant": {
+                "type": "Select",
+                "config": {
+                  "label": "Label Variant",
+                  "options": ["default", "new", "sold_out"]
+                }
+              },
+              "name": {
+                "type": "Text",
+                "config": {
+                  "label": "Product Name"
+                }
+              },
+              "bold_name": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Bold Name"
+                }
+              },
+              "price_prefix": {
+                "type": "Text",
+                "config": {
+                  "label": "Price Prefix (e.g. From, $) "
+                }
+              },
+              "price": {
+                "type": "Text",
+                "config": {
+                  "label": "Price"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong",
+                  "label": "Short Description"
+                }
+              },
+              "color_variants": {
+                "type": "Color",
+                "config": {
+                  "label": "Color Variants"
+                }
+              },
+              "engrave_option": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Engrave Option"
+                }
+              },
+              "product_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Product Link",
+                  "allowText": false,
+                  "repeat": false,
+                  "select": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "format": "custom",
+  "id": "navbar",
+  "label": "Navbar",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logo": {
+        "type": "Group",
+        "config": {
+          "label": "logo",
+          "repeat": true,
+          "fields": {
+            "mainlogo": {
+              "type": "Image",
+              "config": {
+                "label": "mainlogo",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "homelink": {
+              "type": "Link",
+              "config": {
+                "label": "homelink",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "earphones": {
+        "type": "Group",
+        "config": {
+          "label": "Earphones",
+          "repeat": true,
+          "fields": {
+            "earphonetext": {
+              "type": "Text",
+              "config": {
+                "label": "earphonetext",
+                "placeholder": ""
+              }
+            },
+            "earphonepage": {
+              "type": "Link",
+              "config": {
+                "label": "earphonepage",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "headphones": {
+        "type": "Group",
+        "config": {
+          "label": "Headphones",
+          "repeat": true,
+          "fields": {
+            "headphone": {
+              "type": "Text",
+              "config": {
+                "label": "headphone",
+                "placeholder": ""
+              }
+            },
+            "headphonepage": {
+              "type": "Link",
+              "config": {
+                "label": "headphonepage",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "all_products": {
+        "type": "Group",
+        "config": {
+          "label": "All Products",
+          "repeat": true,
+          "fields": {
+            "all_products": {
+              "type": "Text",
+              "config": {
+                "label": "All Products",
+                "placeholder": ""
+              }
+            },
+            "all_productspage": {
+              "type": "Link",
+              "config": {
+                "label": "All ProductsPage",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "searchicon": {
+        "type": "Group",
+        "config": {
+          "label": "searchicon",
+          "repeat": true,
+          "fields": {
+            "searchicon": {
+              "type": "Image",
+              "config": {
+                "label": "searchicon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "searchiconbar": {
+              "type": "Link",
+              "config": {
+                "label": "searchiconbar",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "supporticon": {
+        "type": "Group",
+        "config": {
+          "label": "supporticon",
+          "repeat": true,
+          "fields": {
+            "supporticon": {
+              "type": "Image",
+              "config": {
+                "label": "supporticon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "supportpage": {
+              "type": "Link",
+              "config": {
+                "label": "supportpage",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "cart": {
+        "type": "Group",
+        "config": {
+          "label": "cart",
+          "repeat": true,
+          "fields": {
+            "carticon": {
+              "type": "Image",
+              "config": {
+                "label": "carticon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "cartpage": {
+              "type": "Link",
+              "config": {
+                "label": "cartpage",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      },
+      "signup": {
+        "type": "Group",
+        "config": {
+          "label": "signup",
+          "repeat": true,
+          "fields": {
+            "signup": {
+              "type": "Text",
+              "config": {
+                "label": "signup",
+                "placeholder": ""
+              }
+            },
+            "signuppage": {
+              "type": "Link",
+              "config": {
+                "label": "signuppage",
+                "placeholder": "",
+                "select": null,
+                "allowTargetBlank": true,
+                "allowText": true,
+                "repeat": false
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "with_title_and_navigation",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Changing"
+						}
+					}
+				]
+			},
+			"milestones": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Sunt duis amet qui ad officia esse velit eiusmod dolore tempor fugiat cupidatat occaecat consectetur. Nulla est adipisicing ipsum dolore. Qui aliquip do labore eu deserunt laboris veniam aute in velit ea nisi proident."
+											}
+										}
+									]
+								}
+							],
+							[
+								"years",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
+										"width": 3500,
+										"height": 2338
+									},
+									"url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea",
+									"width": 3500,
+									"height": 2338,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "individual",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"discription2",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Amet ullamco Lorem in non excepteur excepteur sint nisi minim tempor dolore ut fugiat minim. Mollit consequat veniam consectetur pariatur dolore aliqua laborum."
+											}
+										}
+									]
+								}
+							],
+							[
+								"discription3",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Est est adipisicing sint sit ea veniam pariatur ipsum elit."
+											}
+										}
+									]
+								}
+							],
+							[
+								"discription4",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ipsum in esse sunt irure eiusmod eiusmod duis officia aliquip ad ullamco qui. Deserunt amet officia exercitation in duis exercitation aliquip."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"show_navigation": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": []
+	}
+]

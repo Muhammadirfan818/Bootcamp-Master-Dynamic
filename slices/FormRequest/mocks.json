@@ -1,0 +1,89 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default_form_request",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Shallow"
+						}
+					}
+				]
+			},
+			"email_label": {
+				"__TYPE__": "FieldContent",
+				"value": "order",
+				"type": "Text"
+			},
+			"subject_label": {
+				"__TYPE__": "FieldContent",
+				"value": "chose",
+				"type": "Text"
+			},
+			"description_label": {
+				"__TYPE__": "FieldContent",
+				"value": "me",
+				"type": "Text"
+			},
+			"description_helper": {
+				"__TYPE__": "FieldContent",
+				"value": "his",
+				"type": "Text"
+			},
+			"request_type_label": {
+				"__TYPE__": "FieldContent",
+				"value": "proper",
+				"type": "Text"
+			},
+			"request_type_options": {
+				"__TYPE__": "FieldContent",
+				"value": "Support",
+				"type": "Select"
+			},
+			"attachments_label": {
+				"__TYPE__": "FieldContent",
+				"value": "egg",
+				"type": "Text"
+			},
+			"attachments_optional": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"file_upload_prompt": {
+				"__TYPE__": "FieldContent",
+				"value": "exclaimed",
+				"type": "Text"
+			},
+			"submit_button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "condition",
+				"type": "Text"
+			},
+			"little_text": {
+				"__TYPE__": "FieldContent",
+				"value": "beside",
+				"type": "Text"
+			},
+			"next_little_text": {
+				"__TYPE__": "FieldContent",
+				"value": "fresh",
+				"type": "Text"
+			},
+			"searchbar_placeholder": {
+				"__TYPE__": "FieldContent",
+				"value": "whale",
+				"type": "Text"
+			},
+			"request_helper_text": {
+				"__TYPE__": "FieldContent",
+				"value": "on",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

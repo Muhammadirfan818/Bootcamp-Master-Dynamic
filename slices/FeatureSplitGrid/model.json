@@ -1,0 +1,57 @@
+{
+  "type": "SharedSlice",
+  "id": "feature_split_grid",
+  "name": "FeatureSplitGrid",
+  "variations": [
+    {
+      "id": "image_text_alternating_grid",
+      "name": "Image & Text Alternating Grid",
+      "description": "Features are presented in a split-grid: alternating between image and text blocks side by side in a 2x3 matrix. Ideal for visual storytelling with paired visuals and descriptive content.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "items": {
+          "type": "Group",
+          "config": {
+            "label": "Grid Items",
+            "fields": {
+              "media": {
+                "type": "Image",
+                "config": {
+                  "label": "Feature Image"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading3",
+                  "label": "Title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em,hyperlink",
+                  "label": "Description"
+                }
+              },
+              "button": {
+                "type": "Link",
+                "config": {
+                  "label": "button",
+                  "placeholder": "",
+                  "select": null,
+                  "allowTargetBlank": true,
+                  "allowText": true,
+                  "repeat": false
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

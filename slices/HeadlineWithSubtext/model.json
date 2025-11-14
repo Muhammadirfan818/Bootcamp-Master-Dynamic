@@ -1,0 +1,31 @@
+{
+  "type": "SharedSlice",
+  "id": "headline_with_subtext",
+  "name": "HeadlineWithSubtext",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard variation with a main headline and a subtext/description.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Title"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong",
+            "label": "Description"
+          }
+        }
+      }
+    }
+  ]
+}

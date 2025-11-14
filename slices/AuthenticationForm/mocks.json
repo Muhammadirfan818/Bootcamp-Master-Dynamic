@@ -1,0 +1,62 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "create_account",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Mixture"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nostrud eiusmod ex adipisicing dolore non eiusmod aliquip qui officia aliqua. In sit anim amet exercitation incididunt."
+						}
+					}
+				]
+			},
+			"form_fields": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"input_label",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "beauty",
+									"type": "Text"
+								}
+							],
+							[
+								"input_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "text",
+									"type": "Select"
+								}
+							]
+						]
+					}
+				]
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "dark",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

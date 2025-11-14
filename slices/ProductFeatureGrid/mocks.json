@@ -1,0 +1,141 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"section_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Original"
+						}
+					}
+				]
+			},
+			"products": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"main_image",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+										"width": 3424,
+										"height": 3424
+									},
+									"url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+									"width": 3424,
+									"height": 3424,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "knife"
+								}
+							],
+							[
+								"label_text",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "satellites",
+									"type": "Text"
+								}
+							],
+							[
+								"label_variant",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "default",
+									"type": "Select"
+								}
+							],
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "clothes",
+									"type": "Text"
+								}
+							],
+							[
+								"bold_name",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							],
+							[
+								"price_prefix",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "occasionally",
+									"type": "Text"
+								}
+							],
+							[
+								"price",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "circle",
+									"type": "Text"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Deserunt non officia adipisicing voluptate pariatur. Commodo quis Lorem id id ex ex est velit reprehenderit culpa cupidatat pariatur est anim."
+											}
+										}
+									]
+								}
+							],
+							[
+								"color_variants",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "#eff917",
+									"type": "Color"
+								}
+							],
+							[
+								"engrave_option",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": false
+								}
+							],
+							[
+								"product_link",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "b69dc6b0-9e38-4b37-8b20-cc9c3b20521b",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

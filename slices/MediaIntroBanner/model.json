@@ -1,0 +1,52 @@
+{
+  "type": "SharedSlice",
+  "id": "media_intro_banner",
+  "name": "MediaIntroBanner",
+  "variations": [
+    {
+      "id": "video_left_text",
+      "name": "Video with Left Text",
+      "description": "Displays a full-bleed background video, with text content aligned to the bottom left and a media control button.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "background_image": {
+          "type": "Image",
+          "config": {
+            "label": "background image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink,rtl",
+            "label": "Text"
+          }
+        },
+        "icon": {
+          "type": "Image",
+          "config": {
+            "label": "icon",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "button": {
+          "type": "Link",
+          "config": {
+            "label": "button",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

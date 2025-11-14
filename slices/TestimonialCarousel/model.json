@@ -1,0 +1,44 @@
+{
+  "type": "SharedSlice",
+  "id": "testimonial_carousel",
+  "name": "TestimonialCarousel",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Standard testimonial carousel with title, main quote, attribution, and navigation controls.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "section_heading": {
+          "type": "Text",
+          "config": {
+            "label": "Section Heading"
+          }
+        },
+        "testimonials": {
+          "type": "Group",
+          "config": {
+            "label": "Testimonials",
+            "fields": {
+              "quote": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em",
+                  "label": "Quote"
+                }
+              },
+              "attribution": {
+                "type": "Text",
+                "config": {
+                  "label": "Attribution"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

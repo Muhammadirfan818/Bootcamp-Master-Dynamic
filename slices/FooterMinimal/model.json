@@ -1,0 +1,36 @@
+{
+  "type": "SharedSlice",
+  "id": "footer_minimal",
+  "name": "FooterMinimal",
+  "variations": [
+    {
+      "id": "default_footer_minimal",
+      "name": "Default Footer Minimal",
+      "description": "Links arranged in a single row above a single-line text (address or copyright notice).",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "links": {
+          "type": "Link",
+          "config": {
+            "label": "links",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": true
+          }
+        },
+        "note": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph,strong,em,hyperlink",
+            "label": "Footer Note"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

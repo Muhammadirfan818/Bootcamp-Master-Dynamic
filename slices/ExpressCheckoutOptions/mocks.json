@@ -1,0 +1,198 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Adipisicing deserunt proident proident pariatur enim fugiat eiusmod excepteur voluptate minim non excepteur excepteur nisi. Quis reprehenderit occaecat ex ad deserunt."
+						}
+					}
+				]
+			},
+			"checkout_methods": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"provider_logo",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+										"width": 5848,
+										"height": 3899
+									},
+									"url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+									"width": 5848,
+									"height": 3899,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "fast",
+									"credits": null,
+									"__TYPE__": "ImageContent"
+								}
+							],
+							[
+								"provider_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "observe",
+									"type": "Text"
+								}
+							],
+							[
+								"checkout_link",
+								{
+									"key": "5ff51b76-5263-43b9-bec3-6b5a47845e55",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"show_more_options_toggle": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"divider_text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Aute officia nostrud dolore exercitation proident ullamco non qui mollit sint adipisicing occaecat ex dolor do. Ipsum ipsum anim adipisicing incididunt mollit nisi ad ut laborum proident."
+						}
+					}
+				]
+			},
+			"contact_section_title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Reprehenderit sit proident excepteur proident ullamco ex aliqua ad minim est id officia et aute aliquip."
+						}
+					}
+				]
+			},
+			"email_placeholder": {
+				"__TYPE__": "FieldContent",
+				"value": "neighbor",
+				"type": "Text"
+			},
+			"show_newsletter_checkbox": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			},
+			"newsletter_checkbox_label": {
+				"__TYPE__": "FieldContent",
+				"value": "roof",
+				"type": "Text"
+			},
+			"startinglogo": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"logoimage",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+										"width": 4076,
+										"height": 2712
+									},
+									"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+									"width": 4076,
+									"height": 2712,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "wagon",
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"logolink",
+								{
+									"key": "2dbe24cb-cb66-40e5-8f0b-ef837cf52584",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "brief"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"signin": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"signintext",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Irure elit laborum nulla commodo occaecat nisi adipisicing."
+											}
+										}
+									]
+								}
+							],
+							[
+								"signinlink",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "081008f6-594e-4ea5-b0bf-6b10285c5ddd",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://google.com",
+										"text": "everyone"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

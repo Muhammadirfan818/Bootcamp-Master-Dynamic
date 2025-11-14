@@ -1,0 +1,46 @@
+{
+  "type": "SharedSlice",
+  "id": "media_text_cta",
+  "name": "MediaTextCta",
+  "variations": [
+    {
+      "id": "image_left_text_right",
+      "name": "Image Left, Text Right",
+      "description": "Layout with an image on the left and textual content, including heading, description, and a call-to-action button on the right.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "media": {
+          "type": "Image",
+          "config": {
+            "label": "Media"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Heading"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink",
+            "label": "Description"
+          }
+        },
+        "cta_link": {
+          "type": "Link",
+          "config": {
+            "label": "Call to Action",
+            "allowText": true,
+            "repeat": false,
+            "select": null
+          }
+        }
+      }
+    }
+  ]
+}

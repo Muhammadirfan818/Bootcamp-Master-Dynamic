@@ -1,0 +1,32 @@
+{
+  "type": "SharedSlice",
+  "id": "product_gallery_grid",
+  "name": "ProductGalleryGrid",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "A grid of images with flexible positioning and varying sizes, highlighting product visuals in different contexts. Often used for product showcases or galleries.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "gallery_items": {
+          "type": "Group",
+          "config": {
+            "label": "Gallery Items",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Image"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

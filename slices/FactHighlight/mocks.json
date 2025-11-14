@@ -1,0 +1,52 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "centered_large_fact",
+		"primary": {
+			"headline": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Excepteur commodo eiusmod culpa proident dolor fugiat officia deserunt aute esse sit in sit veniam esse."
+						}
+					}
+				]
+			},
+			"highlighted_value": {
+				"__TYPE__": "FieldContent",
+				"value": "finally",
+				"type": "Text"
+			},
+			"highlighted_unit": {
+				"__TYPE__": "FieldContent",
+				"value": "toy",
+				"type": "Text"
+			},
+			"context_text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Lorem sint sunt quis et eu. Aute dolore laborum amet tempor sunt ad labore. Eiusmod exercitation ut reprehenderit aliquip ex pariatur."
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Qui laborum aliquip ex sunt labore in."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

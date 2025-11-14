@@ -1,0 +1,191 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"filter_color_label": {
+				"__TYPE__": "FieldContent",
+				"value": "tail",
+				"type": "Text"
+			},
+			"in_stock_label": {
+				"__TYPE__": "FieldContent",
+				"value": "branch",
+				"type": "Text"
+			},
+			"show_in_stock_toggle": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"sort_by_label": {
+				"__TYPE__": "FieldContent",
+				"value": "gravity",
+				"type": "Text"
+			},
+			"products_count_label": {
+				"__TYPE__": "FieldContent",
+				"value": "been",
+				"type": "Text"
+			},
+			"products": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"image",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+										"width": 3882,
+										"height": 2584
+									},
+									"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+									"width": 3882,
+									"height": 2584,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "hang"
+								}
+							],
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "triangle",
+									"type": "Text"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ad laborum anim eiusmod deserunt nulla ex Lorem nulla voluptate nisi est fugiat. Non pariatur veniam quis aliqua. Id sit enim tempor veniam."
+											}
+										}
+									]
+								}
+							],
+							[
+								"price",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "86",
+									"type": "Number"
+								}
+							],
+							[
+								"is_on_sale",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							],
+							[
+								"is_sold_out",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": false
+								}
+							],
+							[
+								"is_new",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							],
+							[
+								"price_prefix",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "begun",
+									"type": "Text"
+								}
+							],
+							[
+								"badges",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Lorem qui commodo aliqua Lorem esse veniam et elit culpa culpa enim dolor reprehenderit irure. Pariatur enim excepteur sunt nulla ipsum commodo quis esse dolore."
+											}
+										}
+									]
+								}
+							],
+							[
+								"color_swatches",
+								{
+									"__TYPE__": "ImageContent",
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+										"width": 4000,
+										"height": 6000
+									},
+									"url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468",
+									"width": 4000,
+									"height": 6000,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"alt": "include"
+								}
+							],
+							[
+								"is_engraved",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
+							],
+							[
+								"add_to_cart",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "f6a0ab92-dfdb-4a74-8007-bc352290c74e",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com"
+									}
+								}
+							]
+						]
+					}
+				]
+			},
+			"show_pagination": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"total_pages": {
+				"__TYPE__": "FieldContent",
+				"value": "71",
+				"type": "Number"
+			}
+		},
+		"items": []
+	}
+]

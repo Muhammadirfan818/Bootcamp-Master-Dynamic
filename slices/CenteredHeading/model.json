@@ -1,0 +1,36 @@
+{
+  "type": "SharedSlice",
+  "id": "centered_heading",
+  "name": "CenteredHeading",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Displays a single centered heading.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading2",
+            "label": "Title"
+          }
+        },
+        "button": {
+          "type": "Link",
+          "config": {
+            "label": "button",
+            "placeholder": "",
+            "select": null,
+            "allowTargetBlank": true,
+            "allowText": true,
+            "repeat": false
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

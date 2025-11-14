@@ -1,0 +1,144 @@
+{
+  "type": "SharedSlice",
+  "id": "product_grid",
+  "name": "ProductGrid",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "Product grid with options for color filter, in-stock-only toggle, sorting, and paging; displays products in rows and columns with images, names, descriptions, prices, stock status, color variations, badges, and add-to-cart actions.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "filter_color_label": {
+          "type": "Text",
+          "config": {
+            "label": "Color Filter Label"
+          }
+        },
+        "in_stock_label": {
+          "type": "Text",
+          "config": {
+            "label": "In Stock Only Label"
+          }
+        },
+        "show_in_stock_toggle": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show In Stock Toggle"
+          }
+        },
+        "sort_by_label": {
+          "type": "Text",
+          "config": {
+            "label": "Sort By Label"
+          }
+        },
+        "products_count_label": {
+          "type": "Text",
+          "config": {
+            "label": "Products Count Label"
+          }
+        },
+        "products": {
+          "type": "Group",
+          "config": {
+            "label": "Products",
+            "fields": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "label": "Product Image"
+                }
+              },
+              "name": {
+                "type": "Text",
+                "config": {
+                  "label": "Name"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph,strong,em",
+                  "label": "Description"
+                }
+              },
+              "price": {
+                "type": "Number",
+                "config": {
+                  "label": "Price"
+                }
+              },
+              "is_on_sale": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Is On Sale"
+                }
+              },
+              "is_sold_out": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Is Sold Out"
+                }
+              },
+              "is_new": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Is New"
+                }
+              },
+              "price_prefix": {
+                "type": "Text",
+                "config": {
+                  "label": "Price Prefix"
+                }
+              },
+              "badges": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph,strong",
+                  "label": "Badges"
+                }
+              },
+              "color_swatches": {
+                "type": "Image",
+                "config": {
+                  "label": "Color Swatches"
+                }
+              },
+              "is_engraved": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Is Engraved"
+                }
+              },
+              "add_to_cart": {
+                "type": "Link",
+                "config": {
+                  "label": "Add To Cart",
+                  "allowText": false,
+                  "repeat": false,
+                  "select": null
+                }
+              }
+            }
+          }
+        },
+        "show_pagination": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Pagination"
+          }
+        },
+        "total_pages": {
+          "type": "Number",
+          "config": {
+            "label": "Total Pages"
+          }
+        }
+      }
+    }
+  ]
+}

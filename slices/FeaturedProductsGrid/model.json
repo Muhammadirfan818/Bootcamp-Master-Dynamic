@@ -1,0 +1,54 @@
+{
+  "type": "SharedSlice",
+  "id": "featured_products_grid",
+  "name": "FeaturedProductsGrid",
+  "variations": [
+    {
+      "id": "three_card_grid",
+      "name": "Three Card Grid",
+      "description": "Grid layout presenting three featured cards, each with image, title, description, and button. Can mix vertical and horizontal alignment.",
+      "version": "initial",
+      "imageUrl": "",
+      "docURL": "...",
+      "primary": {
+        "cards": {
+          "type": "Group",
+          "config": {
+            "label": "Cards",
+            "fields": {
+              "media": {
+                "type": "Image",
+                "config": {
+                  "label": "Image"
+                }
+              },
+              "heading": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph,strong,em,hyperlink",
+                  "label": "Title"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph,strong,em",
+                  "label": "Description"
+                }
+              },
+              "cta_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Button Link",
+                  "allowText": true,
+                  "repeat": false,
+                  "select": null
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
