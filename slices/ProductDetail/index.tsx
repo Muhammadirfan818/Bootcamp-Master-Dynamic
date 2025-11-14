@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useCart } from "@/app/context/cartcontext";
 
@@ -14,7 +14,7 @@ interface ProductAPI {
   sold_out?: boolean;
 }
 
-const ProductDetailAPI: FC = () => {
+const ProductDetailContent: FC = () => {
   const searchParams = useSearchParams();
   const productId = searchParams.get("id");
   const [product, setProduct] = useState<ProductAPI | null>(null);
@@ -119,6 +119,14 @@ const ProductDetailAPI: FC = () => {
         </div>
       )}
     </section>
+  );
+};
+
+const ProductDetailAPI: FC = () => {
+  return (
+    <Suspense fallback={<div className="text-center py-10">Loading product...</div>}>
+      <ProductDetailContent />
+    </Suspense>
   );
 };
 
