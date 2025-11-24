@@ -29,10 +29,10 @@ const normalizeUrl = (url: string | null | undefined): string => {
 
 export default function Navbar2() {
   const [navbar2, setNavbar2] = useState<any>(null);
-  const [showSearch, setShowSearch] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [countryOpen, setCountryOpen] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showSearch, setShowSearch] = useState<boolean>(false);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [countryOpen, setCountryOpen] = useState<boolean>(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -56,7 +56,7 @@ export default function Navbar2() {
   return (
     <header className="w-full bg-white shadow-sm relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-        
+
         {/* LEFT: Logo */}
         <div className="flex-shrink-0 flex items-center">
           {toArray(navbar2.logo).map((item: any, i: number) =>
@@ -65,7 +65,7 @@ export default function Navbar2() {
                 <PrismicNextImage
                   field={item.logoimage}
                   alt={item.logoimage?.alt || "Logo"}
-                  className="h-8 w-auto object-contain max-w-[140px] sm:max-w-[160px]"
+                  className="h-8 w-auto object-contain max-w-[140px] sm:max-w-[200px]"
                   fallbackAlt=""
                 />
               </Link>
@@ -151,22 +151,26 @@ export default function Navbar2() {
           <button
             onClick={() => setShowSearch(!showSearch)}
             className="text-gray-600 hover:text-gray-900"
+            aria-label="Toggle search"
+            aria-expanded={showSearch}
           >
-            <FiSearch size={20} />
+            <FiSearch size={20} aria-hidden="true" />
           </button>
 
-          <Link 
-            href="/support" 
+          <Link
+            href="/support"
             className="hidden md:block text-gray-600 hover:text-gray-900"
+            aria-label="Support"
           >
-            <FiUser size={20} />
+            <FiUser size={20} aria-hidden="true" />
           </Link>
 
-          <Link 
+          <Link
             href="/cartpage"
             className="text-gray-600 hover:text-gray-900"
+            aria-label="Shopping cart"
           >
-            <FiShoppingBag size={20} />
+            <FiShoppingBag size={20} aria-hidden="true" />
           </Link>
 
           {/* Country Selector */}
@@ -174,11 +178,13 @@ export default function Navbar2() {
             <button
               onClick={() => setCountryOpen(!countryOpen)}
               className="text-sm text-gray-900 flex items-center cursor-pointer whitespace-nowrap"
+              aria-label="Select country"
+              aria-expanded={countryOpen}
             >
               <span className="flex items-center">
                 <span>US</span>
                 <span className="ml-1 inline-flex">
-                  <FiChevronDown size={14} />
+                  <FiChevronDown size={14} aria-hidden="true" />
                 </span>
               </span>
             </button>
@@ -209,8 +215,10 @@ export default function Navbar2() {
           <button
             className="md:hidden text-gray-900"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
           >
-            {mobileMenuOpen ? <FiX size={22} /> : <FiMenu size={22} />}
+            {mobileMenuOpen ? <FiX size={22} aria-hidden="true" /> : <FiMenu size={22} aria-hidden="true" />}
           </button>
         </div>
       </div>
@@ -231,7 +239,7 @@ export default function Navbar2() {
       {/* MOBILE MENU */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white w-full absolute top-full left-0 shadow-md z-40 flex flex-col items-start p-5 space-y-4 border-t border-gray-100">
-          
+
           {/* Headphone */}
           {toArray(navbar2.headphone).map((item: any, i: number) => (
             <Link

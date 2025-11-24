@@ -16,10 +16,10 @@ import {
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState<any>(null);
-  const [showSearch, setShowSearch] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [countryOpen, setCountryOpen] = useState(false);
+  const [showSearch, setShowSearch] = useState<boolean>(false);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+  const [countryOpen, setCountryOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const fetchNavbar = async () => {
@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white shadow-sm top-0 left-0 z-50 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-between">
         {/* LEFT: Logo */}
         <div className="flex-shrink-0 flex items-center">
           {Array.isArray(navbar.logo) && navbar.logo.length > 0 ? (
@@ -48,7 +48,7 @@ export default function Navbar() {
                   <PrismicNextImage
                     field={item.mainlogo}
                     alt={item.mainlogo?.alt || "Logo"}
-                    className="h-8 w-auto object-contain max-w-[140px] sm:max-w-[160px]"
+                    className="h-8 w-auto object-contain max-w-[140px] sm:max-w-[200px]"
                     fallbackAlt=""
                   />
                 </PrismicNextLink>
@@ -63,23 +63,25 @@ export default function Navbar() {
           )}
         </div>
 
-        {/* CENTER: Nav Links (hidden on small screens) */}
-        <nav className="hidden md:flex items-center gap-8">
+        {/* CENTER: Nav Links */}
+        <nav className="hidden md:flex items-center">
           <Link
             href="/headphones"
-            className="flex items-center text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
+            className="flex items-center text-sm tracking-wider text-gray-900 uppercase hover:text-gray-600 transition mr-2"
           >
             Headphones <FiChevronDown size={14} className="ml-1" />
           </Link>
+
           <Link
             href="/earphones"
-            className="flex items-center text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
+            className="flex items-center text-sm tracking-wider text-gray-900 uppercase hover:text-gray-600 transition mr-16"
           >
             Earphones <FiChevronDown size={14} className="ml-1" />
           </Link>
+
           <Link
             href="/allproduct"
-            className="text-sm font-small tracking-wider text-gray-900 uppercase hover:text-gray-600 transition"
+            className="text-sm tracking-wider text-gray-900 uppercase hover:text-gray-600 transition ml-8"
           >
             All Products
           </Link>
@@ -91,24 +93,28 @@ export default function Navbar() {
           <button
             onClick={() => setShowSearch(!showSearch)}
             className="text-gray-600 hover:text-gray-900"
+            aria-label="Toggle search"
+            aria-expanded={showSearch}
           >
-            <FiSearch size={20} />
+            <FiSearch size={20} aria-hidden="true" />
           </button>
 
           {/* User Icon */}
           <Link
-            href="/account" // Changed back to /account
+            href="/account"
             className="hidden md:block text-gray-600 hover:text-gray-900"
+            aria-label="Account"
           >
-            <FiUser size={20} />
+            <FiUser size={20} aria-hidden="true" />
           </Link>
 
           {/* Cart Icon */}
           <Link
             href="/cartpage"
             className="text-gray-600 hover:text-gray-900"
+            aria-label="Shopping cart"
           >
-            <FiShoppingBag size={20} />
+            <FiShoppingBag size={20} aria-hidden="true" />
           </Link>
 
           {/* Country Selector */}
@@ -116,11 +122,13 @@ export default function Navbar() {
             <button
               onClick={() => setCountryOpen(!countryOpen)}
               className="text-sm text-gray-900 flex items-center cursor-pointer whitespace-nowrap"
+              aria-label="Select country"
+              aria-expanded={countryOpen}
             >
               <>
                 <span>US</span>
                 <span className="ml-1 inline-flex">
-                  <FiChevronDown size={14} />
+                  <FiChevronDown size={14} aria-hidden="true" />
                 </span>
               </>
             </button>
@@ -140,10 +148,10 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* Support Button */}
+          {/* Sign Up Button */}
           <Link
             href="/signup"
-            className="hidden md:block bg-white text-black px-5 py-3 text-sm rounded-sm font-normal hover:bg-black-700 transition blackspace-nowrap"
+            className="hidden md:block bg-white text-black px-5 py-3 text-sm rounded-sm font-normal hover:bg-black-700 transition whitespace-nowrap"
           >
             SIGN UP
           </Link>
@@ -152,8 +160,10 @@ export default function Navbar() {
           <button
             className="md:hidden text-gray-900"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
           >
-            {mobileMenuOpen ? <FiX size={22} /> : <FiMenu size={22} />}
+            {mobileMenuOpen ? <FiX size={22} aria-hidden="true" /> : <FiMenu size={22} aria-hidden="true" />}
           </button>
         </div>
       </div>

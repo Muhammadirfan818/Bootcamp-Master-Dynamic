@@ -3957,6 +3957,36 @@ export interface HeroSliderSliceDefaultPrimarySlidesItem {
   image: prismic.ImageField<never>;
 
   /**
+   * image2 field in *HeroSlider → Default → Primary → Slides*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_slider.default.primary.slides[].image2
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  image2: prismic.ImageField<never>;
+
+  /**
+   * image3 field in *HeroSlider → Default → Primary → Slides*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_slider.default.primary.slides[].image3
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  image3: prismic.ImageField<never>;
+
+  /**
+   * image4 field in *HeroSlider → Default → Primary → Slides*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero_slider.default.primary.slides[].image4
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  image4: prismic.ImageField<never>;
+
+  /**
    * Title field in *HeroSlider → Default → Primary → Slides*
    *
    * - **Field Type**: Rich Text

@@ -22,6 +22,30 @@
                   "label": "Image"
                 }
               },
+              "image2": {
+                "type": "Image",
+                "config": {
+                  "label": "image2",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "image3": {
+                "type": "Image",
+                "config": {
+                  "label": "image3",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "image4": {
+                "type": "Image",
+                "config": {
+                  "label": "image4",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
               "title": {
                 "type": "StructuredText",
                 "config": {
@@ -48,7 +72,8 @@
             }
           }
         }
-      }
+      },
+      "items": {}
     }
   ]
 }

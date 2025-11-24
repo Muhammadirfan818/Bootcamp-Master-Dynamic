@@ -1,86 +1,117 @@
 "use client";
 
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import { Content } from "@prismicio/client";
 import { SliceComponentProps, PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import { Pause, Play } from "lucide-react";
+import { Inter } from "next/font/google";
+
+// Load Inter font
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export type HeroSliderProps = SliceComponentProps<Content.HeroSliderSlice>;
 
 const HeroSlider: FC<HeroSliderProps> = ({ slice }) => {
   const slides = slice.primary?.slides || [];
 
+  // Flatten all images
+  const allImages = slides
+    .flatMap((slide) => [slide.image, slide.image2, slide.image3, slide.image4])
+    .filter(Boolean);
+
+  const [current, setCurrent] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  // Auto slide
+  useEffect(() => {
+    if (paused) return;
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % allImages.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [paused, allImages.length]);
+
+  if (!allImages.length) return null;
+
+  // Content for current slide
+  const contentIndex = Math.floor(current / 4); // every 4 images = 1 original slide
+  const currentContent = slides[contentIndex];
+
   return (
-    <section
-      className="relative w-full overflow-hidden"
-      data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation}
-    >
-      {slides.map((slide, index) => (
+    <section className="relative w-full overflow-hidden min-h-screen">
+      {/* Slide Wrapper */}
+      <div
+        className="flex transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+        role="region"
+        aria-live="polite"
+        aria-label="Image carousel"
+      >
+        {allImages.map((img, index) => (
+          <div key={index} className="w-full flex-shrink-0 h-full relative">
+            <PrismicNextImage
+              field={img}
+              fallbackAlt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
+          </div>
+        ))}
+      </div>
+
+      {/* Content Block */}
+      {currentContent && (
         <div
-          key={index}
-          className="relative w-full flex items-center justify-center min-h-[400px] md:min-h-[500px] lg:min-h-[600px]"
+          className={`absolute left-0 bottom-0 z-20 p-6 md:p-12 lg:p-16 max-w-xl text-left ${inter.className}`}
         >
-          {/* Background Image */}
-          {slide.image && (
-            <div className="absolute inset-0 z-0">
-              <PrismicNextImage
-                field={slide.image}
-                alt=""
-                loading={index === 0 ? "eager" : "lazy"}
-                className="object-cover w-full h-full"
-                fallbackAlt=""
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent z-0"></div>
+          {currentContent.title && (
+            <div className="text-white w-[535px] h-[52px] font-normal text-[42.3px] leading-[52px] tracking-[-1.04px] opacity-92">
+              <PrismicRichText field={currentContent.title} />
             </div>
           )}
-
-          {/* Content — Positioned to match Figma */}
-          {/* UPDATED: Reduced max-width to max-w-xl to make description wrap sooner */}
-          <div className="absolute left-0 bottom-0 z-10 p-6 md:p-12 lg:p-16 max-w-xl text-left">
-            {/* Title */}
-            {slide.title && (
-              // UPDATED: Changed font-extrabold to font-bold and added whitespace-nowrap
-              <h1 className="text-4xl md:text-5xl lg:text-6xl  mb-6 text-white leading-tight whitespace-nowrap">
-                <PrismicRichText
-                  field={slide.title}
-                  components={{
-                    heading1: ({ children }) => <>{children}</>,
-                    heading2: ({ children }) => <>{children}</>,
-                    heading3: ({ children }) => <>{children}</>,
-                    heading4: ({ children }) => <>{children}</>,
-                    heading5: ({ children }) => <>{children}</>,
-                    heading6: ({ children }) => <>{children}</>,
-                  }}
-                />
-              </h1>
-            )}
-
-            {/* Description */}
-            {slide.description && (
-              <p className="text-base md:text-md mb-7  py-2 text-white leading-relaxed">
-                <PrismicRichText
-                  field={slide.description}
-                  components={{
-                    paragraph: ({ children }) => <>{children}</>,
-                  }}
-                />
-              </p>
-            )}
-
-            {/* CTA Button */}
-            {slide.primary_cta && (
-              <PrismicNextLink
-                field={slide.primary_cta}
-                // UPDATED: Reduced padding (py-3 px-6) and text size (text-base)
-                className="inline-block bg-white text-gray-800 px-6 py-3 border border-gray-800 rounded-md font-semibold text-base hover:bg-gray-100 transition-colors duration-200"
-              >
-                {slide.primary_cta.text || "Shop Now"}
-              </PrismicNextLink>
-            )}
-          </div>
+          {currentContent.description && (
+            <div className="text-white mt-3 w-[758.78px] h-[46.66px] font-normal text-[16.3px] leading-[25px] tracking-normal opacity-92">
+              <PrismicRichText field={currentContent.description} />
+            </div>
+          )}
+          {currentContent.primary_cta && (
+            <PrismicNextLink
+              field={currentContent.primary_cta}
+              className="flex items-center justify-center text-gray-900 bg-white border border-gray-300 mt-5 w-[133.21px] h-[52.79px] font-medium text-base opacity-92 hover:bg-gray-50 transition-colors"
+            >
+              {currentContent.primary_cta.text || "Shop Now"}
+            </PrismicNextLink>
+          )}
         </div>
-      ))}
+      )}
+
+      {/* Dots + Pause Button */}
+      <div className="absolute bottom-5 right-5 z-30 flex items-center gap-4">
+        {/* Dots */}
+        <div className="flex gap-2" role="tablist" aria-label="Slide navigation">
+          {allImages.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`w-3 h-3 rounded-full transition-all ${current === i ? "bg-white scale-110" : "bg-white/40"
+                }`}
+              role="tab"
+              aria-selected={current === i}
+              aria-label={`Go to slide ${i + 1}`}
+            ></button>
+          ))}
+        </div>
+
+        {/* Pause / Play Button */}
+        <button
+          onClick={() => setPaused((prev) => !prev)}
+          className="text-white bg-black/40 hover:bg-black/60 px-3 py-1 rounded-full border border-white/40 transition-colors"
+          aria-label={paused ? "Play slideshow" : "Pause slideshow"}
+        >
+          {paused ? <Play size={20} aria-hidden="true" /> : <Pause size={20} aria-hidden="true" />}
+        </button>
+      </div>
     </section>
   );
 };
