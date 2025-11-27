@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { createClient } from "@/prismicio";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText } from "@prismicio/react";
 import Link from "next/link";
@@ -27,21 +26,11 @@ const normalizeUrl = (url: string | null | undefined): string => {
   return url;
 };
 
-export default function Navbar2() {
-  const [navbar2, setNavbar2] = useState<any>(null);
+export default function Navbar2({ data }: { data?: any }) {
   const [showSearch, setShowSearch] = useState<boolean>(false);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [countryOpen, setCountryOpen] = useState<boolean>(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const client = createClient();
-      const data = await client.getSingle("navbar2").catch(() => null);
-      setNavbar2(data?.data || null);
-    };
-    fetchData();
-  }, []);
 
   useEffect(() => {
     if (showSearch) setMobileMenuOpen(false);
@@ -51,7 +40,7 @@ export default function Navbar2() {
     if (mobileMenuOpen) setShowSearch(false);
   }, [mobileMenuOpen]);
 
-  if (!navbar2) return null;
+  if (!data) return null;
 
   return (
     <header className="w-full bg-white shadow-sm relative z-50">
@@ -59,7 +48,7 @@ export default function Navbar2() {
 
         {/* LEFT: Logo */}
         <div className="flex-shrink-0 flex items-center">
-          {toArray(navbar2.logo).map((item: any, i: number) =>
+          {toArray(data.logo).map((item: any, i: number) =>
             item.logoimage ? (
               <Link key={i} href={normalizeUrl(item.link?.url) || "/"}>
                 <PrismicNextImage
@@ -81,7 +70,7 @@ export default function Navbar2() {
         <nav className="hidden md:flex items-center gap-6">
 
           {/* Headphone */}
-          {toArray(navbar2.headphone).map((item: any, i: number) => (
+          {toArray(data.headphone).map((item: any, i: number) => (
             <Link
               key={`headphone-${i}`}
               href={normalizeUrl(item.headphonelink?.url) || "#"}
@@ -95,7 +84,7 @@ export default function Navbar2() {
           ))}
 
           {/* Earphones */}
-          {toArray(navbar2.earphones).map((item: any, i: number) => (
+          {toArray(data.earphones).map((item: any, i: number) => (
             <Link
               key={`earphones-${i}`}
               href={normalizeUrl(item.earphonelink?.url) || "#"}
@@ -109,7 +98,7 @@ export default function Navbar2() {
           ))}
 
           {/* Accessories */}
-          {toArray(navbar2.accessories).map((item: any, i: number) => (
+          {toArray(data.accessories).map((item: any, i: number) => (
             <Link
               key={`accessories-${i}`}
               href={normalizeUrl(item.accessorieslink?.url) || "#"}
@@ -123,7 +112,7 @@ export default function Navbar2() {
           ))}
 
           {/* Collaborations */}
-          {toArray(navbar2.collaborations).map((item: any, i: number) => (
+          {toArray(data.collaborations).map((item: any, i: number) => (
             <Link
               key={`collab-${i}`}
               href={normalizeUrl(item.collaborationslink?.url) || "#"}
@@ -134,7 +123,7 @@ export default function Navbar2() {
           ))}
 
           {/* Blog */}
-          {toArray(navbar2.blog).map((item: any, i: number) => (
+          {toArray(data.blog).map((item: any, i: number) => (
             <Link
               key={`blog-${i}`}
               href={normalizeUrl(item.bloglink?.url) || "#"}
@@ -241,7 +230,7 @@ export default function Navbar2() {
         <div className="md:hidden bg-white w-full absolute top-full left-0 shadow-md z-40 flex flex-col items-start p-5 space-y-4 border-t border-gray-100">
 
           {/* Headphone */}
-          {toArray(navbar2.headphone).map((item: any, i: number) => (
+          {toArray(data.headphone).map((item: any, i: number) => (
             <Link
               key={`m-headphone-${i}`}
               href={normalizeUrl(item.headphonelink?.url) || "#"}
@@ -252,7 +241,7 @@ export default function Navbar2() {
           ))}
 
           {/* Earphones */}
-          {toArray(navbar2.earphones).map((item: any, i: number) => (
+          {toArray(data.earphones).map((item: any, i: number) => (
             <Link
               key={`m-earphones-${i}`}
               href={normalizeUrl(item.earphonelink?.url) || "#"}
@@ -263,7 +252,7 @@ export default function Navbar2() {
           ))}
 
           {/* Accessories */}
-          {toArray(navbar2.accessories).map((item: any, i: number) => (
+          {toArray(data.accessories).map((item: any, i: number) => (
             <Link
               key={`m-accessories-${i}`}
               href={normalizeUrl(item.accessorieslink?.url) || "#"}
@@ -274,7 +263,7 @@ export default function Navbar2() {
           ))}
 
           {/* Collaborations */}
-          {toArray(navbar2.collaborations).map((item: any, i: number) => (
+          {toArray(data.collaborations).map((item: any, i: number) => (
             <Link
               key={`m-collab-${i}`}
               href={normalizeUrl(item.collaborationslink?.url) || "#"}
@@ -285,7 +274,7 @@ export default function Navbar2() {
           ))}
 
           {/* Blog */}
-          {toArray(navbar2.blog).map((item: any, i: number) => (
+          {toArray(data.blog).map((item: any, i: number) => (
             <Link
               key={`m-blog-${i}`}
               href={normalizeUrl(item.bloglink?.url) || "#"}

@@ -17,13 +17,15 @@ export const metadata: Metadata = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const client = createClient();
   const headtext = await client.getSingle("headtext").catch(() => null);
+  const navbarData = await client.getSingle("navbar").catch(() => null);
+  const navbar2Data = await client.getSingle("navbar2").catch(() => null);
 
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <CartProvider>
           {headtext?.data?.headtext && <GlobalHeadtext field={headtext.data.headtext} />}
-          <NavbarSelector />
+          <NavbarSelector navbarData={navbarData?.data} navbar2Data={navbar2Data?.data} />
           {children}
         </CartProvider>
       </body>

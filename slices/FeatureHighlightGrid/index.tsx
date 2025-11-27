@@ -52,7 +52,7 @@ const FeatureHighlightGrid: FC<FeatureHighlightGridProps> = ({ slice }) => {
   return (
     <section
       // UPDATED: Responsive vertical padding
-      className="w-full bg-gray-900 text-white py-12 md:py-16 px-6 md:px-12"
+      className="w-full bg-[#212121] text-white py-12 md:py-16 px-6 md:px-12"
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
@@ -106,11 +106,11 @@ const FeatureHighlightGrid: FC<FeatureHighlightGridProps> = ({ slice }) => {
 
               {/* Content Overlay */}
               {/* UPDATED: Responsive padding */}
-              <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 z-20">
+              <div className="absolute bottom-4 right-4 md:bottom-8 md:right-8 z-20">
                 {/* Title (e.g., SOUND, MATERIALS, DESIGN) */}
                 {item.title && (
                   // UPDATED: Responsive font size
-                  <h3 className="text-xl md:text-2xl font-semibold uppercase text-white tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_0.7)]">
+                  <h3 className="text-xl text-left md:text-2xl font-semibold uppercase text-white tracking-wide [text-shadow:_0_1px_3px_rgb(0_0_0_/_0.7)]">
                     {item.title}
                   </h3>
                 )}
@@ -123,7 +123,7 @@ const FeatureHighlightGrid: FC<FeatureHighlightGridProps> = ({ slice }) => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center py-4">
           {/* Description */}
           {description && (
-            <div className="max-w-xl mb-6 md:mb-0">
+            <div className="max-w-md mb-6 md:mb-0">
               <PrismicRichText
                 field={description}
                 components={descriptionComponents}
@@ -136,7 +136,7 @@ const FeatureHighlightGrid: FC<FeatureHighlightGridProps> = ({ slice }) => {
             <PrismicNextLink
               field={cta}
               // UPDATED: Made button responsive and styled
-              className="inline-block bg-white text-gray-900 px-7 py-3 rounded text-sm font-semibold hover:bg-gray-200 transition"
+              className="inline-block bg-white text-gray-900 px-7 py-3  text-sm font-semibold hover:bg-gray-200 transition"
             >
               {cta.text || "Learn More"}
             </PrismicNextLink>

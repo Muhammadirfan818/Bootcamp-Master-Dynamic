@@ -43,7 +43,7 @@ const HeroWithImage: FC<HeroWithImageProps> = ({ slice }) => {
       <div className="relative z-20 max-w-2xl">
         {/* Label (fixed: changed <p> to <div> to prevent nested <p> tags) */}
         {slice.primary.label && (
-          <div className="text-sm md:text-base mb-3 font-semibold text-white uppercase tracking-wider underline decoration-white decoration-2 underline-offset-4">
+          <div className="text-md md:text-base mb-3 font-family-inter font-semibold text-white uppercase tracking-wider  decoration-white decoration-2 underline-offset-4">
             <PrismicRichText field={slice.primary.label} />
           </div>
         )}
@@ -65,7 +65,7 @@ const HeroWithImage: FC<HeroWithImageProps> = ({ slice }) => {
         {slice.primary.button && (
           <PrismicNextLink
             field={slice.primary.button}
-            className="inline-block bg-white hover:bg-gray-200 text-black px-7 py-3 text-sm rounded font-semibold transition"
+            className="inline-block bg-white hover:bg-gray-200 text-black px-7 py-3 text-sm  font-semibold transition"
           >
             {slice.primary.button.text || ""}
           </PrismicNextLink>
