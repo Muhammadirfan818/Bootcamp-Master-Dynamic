@@ -123,7 +123,7 @@ const ProductFeatureGrid: FC = () => {
             <div
               key={item.id}
               className="group relative flex flex-col bg-white shadow-sm rounded-[7px]"
-              style={{ width: 384, height: 544, overflow: "hidden" }}
+              style={{ width: 336, height: 480, overflow: "hidden" }}
             >
               {/* Image */}
               <Link href={`/productdetail?id=${item.id}`} className="block relative w-full h-[65%]">
